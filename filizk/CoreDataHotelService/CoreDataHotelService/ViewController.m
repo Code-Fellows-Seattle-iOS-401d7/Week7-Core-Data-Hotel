@@ -11,6 +11,7 @@
 #import "ViewController.h"
 #import "Hotel+CoreDataClass.h"
 #import "HotelsViewController.h"
+#import "DatePickerViewController.h"
 
 @interface ViewController ()
 
@@ -33,8 +34,8 @@
     CGFloat buttonHeight = (self.view.frame.size.height -(navigationBarHeight)) * 0.33;
 
     UIButton *browseButton = [self createButtonWithTitle:@"Browse" andBackgroundColor:[UIColor colorWithRed:1.0 green:1.0 blue:.76 alpha:1.0]];
-    UIButton *bookButton = [self createButtonWithTitle:@"Book" andBackgroundColor:[UIColor colorWithRed:1.0 green:1.0 blue:.76 alpha:1.0]];
-    UIButton *lookupButton = [self createButtonWithTitle:@"Lookup" andBackgroundColor:[UIColor colorWithRed:1.0 green:1.0 blue:.76 alpha:1.0]];
+    UIButton *bookButton = [self createButtonWithTitle:@"Book" andBackgroundColor:[UIColor colorWithRed:0.5 green:1.0 blue:0.76 alpha:1.0]];
+    UIButton *lookupButton = [self createButtonWithTitle:@"Lookup" andBackgroundColor:[UIColor colorWithRed:1.0 green:0.5 blue:.76 alpha:1.0]];
 
     [AutoLayout createLeadingConstraintFrom:browseButton toView:self.view];
     [AutoLayout createTrailingConstraintFrom:browseButton toView:self.view];
@@ -71,6 +72,7 @@
 
     //colum below in the selector(browseButtonSelected:) means function takes one input as parameter
     [browseButton addTarget:self action:@selector(browseButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
+    [bookButton addTarget:self action:@selector(bookButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 //
@@ -79,6 +81,13 @@
 
     HotelsViewController *hotelsVC = [[HotelsViewController alloc]init];
     [self.navigationController pushViewController:hotelsVC animated:YES];
+}
+
+-(void)bookButtonSelected:(UIButton *)sender{
+    NSLog(@"Book Button Pressed");
+
+    DatePickerViewController *datePickerVC = [[DatePickerViewController alloc]init];
+    [self.navigationController pushViewController:datePickerVC animated:YES];
 }
 
 -(UIButton *)createButtonWithTitle:(NSString *) title andBackgroundColor:(UIColor *)color {

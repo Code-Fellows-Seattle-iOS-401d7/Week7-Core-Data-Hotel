@@ -9,6 +9,7 @@
 #import "AutoLayout.h"
 
 
+
 @implementation AutoLayout
 
 //constant can't be changed, but the multiplier can be so we're taking the multiplier.
@@ -35,6 +36,7 @@
                                                                       toView:superView
                                                                withAttribute:attribute
                                                                andMultiplier:1.0];
+    NSString *a = MyThingNotificationKey;
     return constraint;
 }
 

@@ -54,7 +54,7 @@
         NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Hotel"];
         NSError *fetchError;
         _dataSource = [context executeFetchRequest:request error:&fetchError];
-
+        
         if (fetchError) {
             NSLog(@"Error fetching data from Core Data");
         }
@@ -81,7 +81,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     RoomsViewController *roomsVC = [[RoomsViewController alloc]init];
-    //roomsVC.data
+    roomsVC.hotel = self.dataSource[indexPath.row] ;
     [self.navigationController pushViewController:roomsVC animated:YES];
 }
 

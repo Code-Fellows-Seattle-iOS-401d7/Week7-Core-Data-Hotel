@@ -13,7 +13,7 @@
 
 @interface RoomsViewController () <UITableViewDataSource, UITableViewDelegate>
 
-@property(strong, nonatomic)NSArray *dataSource;
+@property(strong, nonatomic)NSArray *rooms;
 @property(strong, nonatomic)UITableView *tableView;
 
 @end
@@ -45,24 +45,26 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
--(NSArray *)dataSource{
-    if (!_dataSource) {
+-(NSArray *)rooms{
+    if (!_rooms) {
         AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication]delegate];
         NSManagedObjectContext *context = delegate.persistentContainer.viewContext;
-        NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Room"];
-        NSError *fetchError;
-        _dataSource = [context executeFetchRequest:request error:&fetchError];
 
-        if (fetchError) {
-            NSLog(@"Error fetching data from Core Data");
+        NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Room"];
+        request.predicate = [NSPredicate predicateWithFormat:@"hotel == %@", self.hotel];
+
+        NSError *requestError;
+        _rooms = [context executeFetchRequest:request error:&requestError];
+
+        if (requestError) {
+            NSLog(@"Error requesting data from Core Data");
         }
     }
-
-    return _dataSource;
+    return _rooms;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.dataSource.count;
+    return self.rooms.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -72,21 +74,11 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
 
-    Room *room = self.dataSource[indexPath.row];
-    NSLog(@"%hi", room.number);
-    NSString *string = [NSString stringWithFormat:@"%d", room.number];
+    Room *room = self.rooms[indexPath.row];
+    
+    NSString *string = [NSString stringWithFormat:@"Room: %i (%i beds, $%0.2f per night). ", room.number, room.beds, room.rate.floatValue];
     cell.textLabel.text = string;
     return cell;
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

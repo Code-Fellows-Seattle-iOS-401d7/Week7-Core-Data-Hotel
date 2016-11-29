@@ -158,11 +158,11 @@
             for (NSDictionary *room in rooms) {
                 Room *newRoom = [NSEntityDescription insertNewObjectForEntityForName:@"Room" inManagedObjectContext:self.persistentContainer.viewContext];
 
-                newRoom.number = [room[@"number"] integerValue];
+                newRoom.number = [room[@"number"] integerValue]; //reads numaric values from JSON as NSNumber
                 newRoom.beds = [room[@"beds"] integerValue];
-                //newRoom.rate = [room[@"rate"] decimalValue];
+                newRoom.rate = room[@"rate"];
 
-                //newRoom.hotel = newHotel;
+                newRoom.hotel = newHotel;
             }
 
         }

@@ -17,6 +17,9 @@
 		BD494A9B1DECEEFA005E42CF /* HotelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD494A9A1DECEEFA005E42CF /* HotelsViewController.m */; };
 		BD494A9D1DECF8A4005E42CF /* hotels.json in Resources */ = {isa = PBXBuildFile; fileRef = BD494A9C1DECF8A4005E42CF /* hotels.json */; };
 		BD494AA01DED3E34005E42CF /* RoomsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD494A9F1DED3E34005E42CF /* RoomsViewController.m */; };
+		BD494AA31DEDF72A005E42CF /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD494AA21DEDF72A005E42CF /* DatePickerViewController.m */; };
+		BD494AA61DEE114A005E42CF /* AvailabilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD494AA51DEE114A005E42CF /* AvailabilityViewController.m */; };
+		BD494AA91DEE1D3D005E42CF /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD494AA81DEE1D3D005E42CF /* BookViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,12 @@
 		BD494A9C1DECF8A4005E42CF /* hotels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hotels.json; sourceTree = "<group>"; };
 		BD494A9E1DED3E34005E42CF /* RoomsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomsViewController.h; sourceTree = "<group>"; };
 		BD494A9F1DED3E34005E42CF /* RoomsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomsViewController.m; sourceTree = "<group>"; };
+		BD494AA11DEDF72A005E42CF /* DatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerViewController.h; sourceTree = "<group>"; };
+		BD494AA21DEDF72A005E42CF /* DatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerViewController.m; sourceTree = "<group>"; };
+		BD494AA41DEE114A005E42CF /* AvailabilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvailabilityViewController.h; sourceTree = "<group>"; };
+		BD494AA51DEE114A005E42CF /* AvailabilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvailabilityViewController.m; sourceTree = "<group>"; };
+		BD494AA71DEE1D3D005E42CF /* BookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookViewController.h; sourceTree = "<group>"; };
+		BD494AA81DEE1D3D005E42CF /* BookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +78,16 @@
 		BD494A7B1DEC9D7D005E42CF /* CoreDataHotelService */ = {
 			isa = PBXGroup;
 			children = (
+				BD494AA71DEE1D3D005E42CF /* BookViewController.h */,
+				BD494AA81DEE1D3D005E42CF /* BookViewController.m */,
+				BD494AA41DEE114A005E42CF /* AvailabilityViewController.h */,
+				BD494AA51DEE114A005E42CF /* AvailabilityViewController.m */,
+				BD494AA21DEDF72A005E42CF /* DatePickerViewController.m */,
+				BD494AA11DEDF72A005E42CF /* DatePickerViewController.h */,
+				BD494A991DECEEFA005E42CF /* HotelsViewController.h */,
+				BD494A9A1DECEEFA005E42CF /* HotelsViewController.m */,
+				BD494A9E1DED3E34005E42CF /* RoomsViewController.h */,
+				BD494A9F1DED3E34005E42CF /* RoomsViewController.m */,
 				BD494A7F1DEC9D7D005E42CF /* AppDelegate.h */,
 				BD494A801DEC9D7D005E42CF /* AppDelegate.m */,
 				BD494A961DECA2EE005E42CF /* AutoLayout.h */,
@@ -80,10 +99,6 @@
 				BD494A901DEC9D7E005E42CF /* Info.plist */,
 				BD494A881DEC9D7D005E42CF /* CoreDataHotelService.xcdatamodeld */,
 				BD494A7C1DEC9D7D005E42CF /* Supporting Files */,
-				BD494A991DECEEFA005E42CF /* HotelsViewController.h */,
-				BD494A9A1DECEEFA005E42CF /* HotelsViewController.m */,
-				BD494A9E1DED3E34005E42CF /* RoomsViewController.h */,
-				BD494A9F1DED3E34005E42CF /* RoomsViewController.m */,
 				BD494A9C1DECF8A4005E42CF /* hotels.json */,
 			);
 			path = CoreDataHotelService;
@@ -169,9 +184,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD494AA31DEDF72A005E42CF /* DatePickerViewController.m in Sources */,
 				BD494A841DEC9D7D005E42CF /* ViewController.m in Sources */,
 				BD494A811DEC9D7D005E42CF /* AppDelegate.m in Sources */,
 				BD494A7E1DEC9D7D005E42CF /* main.m in Sources */,
+				BD494AA61DEE114A005E42CF /* AvailabilityViewController.m in Sources */,
+				BD494AA91DEE1D3D005E42CF /* BookViewController.m in Sources */,
 				BD494A9B1DECEEFA005E42CF /* HotelsViewController.m in Sources */,
 				BD494AA01DED3E34005E42CF /* RoomsViewController.m in Sources */,
 				BD494A8A1DEC9D7D005E42CF /* CoreDataHotelService.xcdatamodeld in Sources */,
@@ -324,6 +342,7 @@
 				BD494A951DEC9D7E005E42CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
