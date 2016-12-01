@@ -21,6 +21,7 @@
 		BD494AA61DEE114A005E42CF /* AvailabilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD494AA51DEE114A005E42CF /* AvailabilityViewController.m */; };
 		BD494AA91DEE1D3D005E42CF /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD494AA81DEE1D3D005E42CF /* BookViewController.m */; };
 		BD494AB91DEF548E005E42CF /* AutoLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD494AB81DEF548E005E42CF /* AutoLayoutTests.m */; };
+		BD494ABC1DEFD241005E42CF /* LookupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD494ABB1DEFD241005E42CF /* LookupViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		BD494AAE1DEF5240005E42CF /* CoreDataHotelServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataHotelServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD494AB21DEF5240005E42CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD494AB81DEF548E005E42CF /* AutoLayoutTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutTests.m; sourceTree = "<group>"; };
+		BD494ABA1DEFD241005E42CF /* LookupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LookupViewController.h; sourceTree = "<group>"; };
+		BD494ABB1DEFD241005E42CF /* LookupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LookupViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,22 +104,11 @@
 		BD494A7B1DEC9D7D005E42CF /* CoreDataHotelService */ = {
 			isa = PBXGroup;
 			children = (
-				BD494AA71DEE1D3D005E42CF /* BookViewController.h */,
-				BD494AA81DEE1D3D005E42CF /* BookViewController.m */,
-				BD494AA41DEE114A005E42CF /* AvailabilityViewController.h */,
-				BD494AA51DEE114A005E42CF /* AvailabilityViewController.m */,
-				BD494AA21DEDF72A005E42CF /* DatePickerViewController.m */,
-				BD494AA11DEDF72A005E42CF /* DatePickerViewController.h */,
-				BD494A991DECEEFA005E42CF /* HotelsViewController.h */,
-				BD494A9A1DECEEFA005E42CF /* HotelsViewController.m */,
-				BD494A9E1DED3E34005E42CF /* RoomsViewController.h */,
-				BD494A9F1DED3E34005E42CF /* RoomsViewController.m */,
+				BD494ABF1DEFD83A005E42CF /* View */,
+				BD494ABE1DEFD831005E42CF /* ViewController */,
+				BD494ABD1DEFD829005E42CF /* Model */,
 				BD494A7F1DEC9D7D005E42CF /* AppDelegate.h */,
 				BD494A801DEC9D7D005E42CF /* AppDelegate.m */,
-				BD494A961DECA2EE005E42CF /* AutoLayout.h */,
-				BD494A971DECA2EE005E42CF /* AutoLayout.m */,
-				BD494A821DEC9D7D005E42CF /* ViewController.h */,
-				BD494A831DEC9D7D005E42CF /* ViewController.m */,
 				BD494A8B1DEC9D7D005E42CF /* Assets.xcassets */,
 				BD494A8D1DEC9D7D005E42CF /* LaunchScreen.storyboard */,
 				BD494A901DEC9D7E005E42CF /* Info.plist */,
@@ -142,6 +134,43 @@
 				BD494AB21DEF5240005E42CF /* Info.plist */,
 			);
 			path = CoreDataHotelServiceTests;
+			sourceTree = "<group>";
+		};
+		BD494ABD1DEFD829005E42CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BD494ABE1DEFD831005E42CF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BD494ABA1DEFD241005E42CF /* LookupViewController.h */,
+				BD494ABB1DEFD241005E42CF /* LookupViewController.m */,
+				BD494AA71DEE1D3D005E42CF /* BookViewController.h */,
+				BD494AA81DEE1D3D005E42CF /* BookViewController.m */,
+				BD494AA41DEE114A005E42CF /* AvailabilityViewController.h */,
+				BD494AA51DEE114A005E42CF /* AvailabilityViewController.m */,
+				BD494AA21DEDF72A005E42CF /* DatePickerViewController.m */,
+				BD494AA11DEDF72A005E42CF /* DatePickerViewController.h */,
+				BD494A991DECEEFA005E42CF /* HotelsViewController.h */,
+				BD494A9A1DECEEFA005E42CF /* HotelsViewController.m */,
+				BD494A9E1DED3E34005E42CF /* RoomsViewController.h */,
+				BD494A9F1DED3E34005E42CF /* RoomsViewController.m */,
+				BD494A821DEC9D7D005E42CF /* ViewController.h */,
+				BD494A831DEC9D7D005E42CF /* ViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		BD494ABF1DEFD83A005E42CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD494A961DECA2EE005E42CF /* AutoLayout.h */,
+				BD494A971DECA2EE005E42CF /* AutoLayout.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +280,7 @@
 				BD494AA31DEDF72A005E42CF /* DatePickerViewController.m in Sources */,
 				BD494A841DEC9D7D005E42CF /* ViewController.m in Sources */,
 				BD494A811DEC9D7D005E42CF /* AppDelegate.m in Sources */,
+				BD494ABC1DEFD241005E42CF /* LookupViewController.m in Sources */,
 				BD494A7E1DEC9D7D005E42CF /* main.m in Sources */,
 				BD494AA61DEE114A005E42CF /* AvailabilityViewController.m in Sources */,
 				BD494AA91DEE1D3D005E42CF /* BookViewController.m in Sources */,
@@ -457,6 +487,7 @@
 				BD494AB71DEF5240005E42CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

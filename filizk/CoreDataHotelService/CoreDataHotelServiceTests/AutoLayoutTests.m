@@ -57,7 +57,7 @@
 }
 
 -(void)testCreateGenericConstraintFromViewToViewWithAttrAndMult {
-    id constraint = [AutoLayout createGenericConstraintFrom:self.testView1 toView:_testView2 withAttribute:NSLayoutAttributeTop andMultiplier:1.0];
+    id constraint = [AutoLayout createGenericConstraintFrom:self.testView1 toView:self.testView2 withAttribute:NSLayoutAttributeTop andMultiplier:1.0];
 
     XCTAssert([constraint isMemberOfClass:[NSLayoutConstraint class]] ,@"constraint is not a NSLayoutConstraint Object");
 }

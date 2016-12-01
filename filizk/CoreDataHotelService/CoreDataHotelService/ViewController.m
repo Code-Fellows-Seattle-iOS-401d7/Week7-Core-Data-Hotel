@@ -12,6 +12,7 @@
 #import "Hotel+CoreDataClass.h"
 #import "HotelsViewController.h"
 #import "DatePickerViewController.h"
+#import "LookupViewController.h"
 
 @interface ViewController ()
 
@@ -77,6 +78,7 @@
     //colum below in the selector(browseButtonSelected:) means function takes one input as parameter
     [browseButton addTarget:self action:@selector(browseButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
     [bookButton addTarget:self action:@selector(bookButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
+    [lookupButton addTarget:self action:@selector(lookupButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 //
@@ -92,6 +94,11 @@
 
     DatePickerViewController *datePickerVC = [[DatePickerViewController alloc]init];
     [self.navigationController pushViewController:datePickerVC animated:YES];
+}
+
+-(void)lookupButtonSelected:(UIButton *)sender {
+    LookupViewController *lookupVC = [[LookupViewController alloc]init];
+    [self.navigationController pushViewController:lookupVC animated:YES];
 }
 
 -(UIButton *)createButtonWithTitle:(NSString *) title andBackgroundColor:(UIColor *)color {
