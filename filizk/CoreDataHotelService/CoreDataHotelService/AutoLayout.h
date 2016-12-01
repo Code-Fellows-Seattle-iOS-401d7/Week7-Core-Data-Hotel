@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 //@import UIKit; this is optimized to include modules
 
-//static const int kstatusBarHeight = 20;
-static NSString *const MyThingNotificationKey = @"MyThingNotificationKey";
+static const int kstatusBarHeight = 20;
+//int gGlobalVar1 = 0; //everywhere the .h file is included this is trying to make a var named gGlobalVar. This is creating a linking error. But you can define a global var in the .m file like this and then use the keyword "extern" to access it from outside of the file.
 
 @interface AutoLayout : NSObject
 //constant can't be changed, but the multiplier can be so we're taking the multiplier.
@@ -27,8 +27,6 @@ static NSString *const MyThingNotificationKey = @"MyThingNotificationKey";
 
 +(NSLayoutConstraint *)createEqualHeightConstraintFrom:(UIView *)view toView:(UIView *)otherView;
 +(NSLayoutConstraint *)createEqualHeightConstraintFrom:(UIView *)view toView:(UIView *)otherView withMultiplier:(CGFloat)multiplier;
-
-
 
 
 @end

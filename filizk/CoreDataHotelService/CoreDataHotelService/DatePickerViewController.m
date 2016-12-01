@@ -49,7 +49,7 @@
     [self.startPicker setTranslatesAutoresizingMaskIntoConstraints:NO];
 
     //Date Picker - startDate(TO-DO make 20 a constant value - need static?)
-    CGFloat topSpaceForPicker = CGRectGetHeight(self.navigationController.navigationBar.frame) + 20.0 ;// 20 is the status bar height.
+    CGFloat topSpaceForPicker = CGRectGetHeight(self.navigationController.navigationBar.frame) + kstatusBarHeight ;// 20 is the status bar height.
     [AutoLayout createTrailingConstraintFrom:self.startPicker toView:self.view];
     [AutoLayout createLeadingConstraintFrom:self.startPicker toView:self.view];
 

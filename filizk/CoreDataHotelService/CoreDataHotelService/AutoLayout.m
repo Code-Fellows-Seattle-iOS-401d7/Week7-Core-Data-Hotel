@@ -8,8 +8,7 @@
 
 #import "AutoLayout.h"
 
-
-
+int gGlobalVar = 0;
 @implementation AutoLayout
 
 //constant can't be changed, but the multiplier can be so we're taking the multiplier.
@@ -26,6 +25,7 @@
 
     constraint.active = YES;
 
+
     return constraint;
 
 }
@@ -36,7 +36,7 @@
                                                                       toView:superView
                                                                withAttribute:attribute
                                                                andMultiplier:1.0];
-    NSString *a = MyThingNotificationKey;
+   
     return constraint;
 }
 
@@ -98,6 +98,15 @@
     return [AutoLayout createGenericConstraintFrom:view toView:otherView withAttribute:NSLayoutAttributeHeight andMultiplier: multiplier];
 }
 
+//+(NSString *)bar{
+//    if (!_bar){
+//        _bar = @"Test";
+//    } else {
+//
+//    }
+//
+//    return _bar;
+//}
 
 
 

@@ -25,6 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
 }
 
 -(void)loadView {
@@ -49,7 +50,7 @@
 
     [self.view addSubview:messageLabel];
 
-    CGFloat myMargin = 20.0;
+    CGFloat myMargin = kstatusBarHeight;
     NSLayoutConstraint *leading = [AutoLayout createLeadingConstraintFrom:messageLabel toView:self.view];
     leading.constant = myMargin;
 
@@ -89,7 +90,7 @@
     [self.view addSubview:self.email];
 
     //Layout textfields - firstName
-    CGFloat myMargin = 20.0;
+    CGFloat myMargin = kstatusBarHeight;
     CGFloat navAndStatusBarHeight = CGRectGetHeight(self.navigationController.navigationBar.frame) + myMargin;
 
     NSLayoutConstraint *top =[AutoLayout createGenericConstraintFrom:self.firstName toView:self.view withAttribute:NSLayoutAttributeTop];
@@ -103,7 +104,7 @@
 
     //Layout textfields - lastName
     top =[AutoLayout createGenericConstraintFrom:self.lastName toView:self.firstName withAttribute:NSLayoutAttributeTop];
-    top.constant = myMargin + 20;
+    top.constant = myMargin + kstatusBarHeight;
 
     leading = [AutoLayout createLeadingConstraintFrom:self.lastName toView:self.view];
     leading.constant = myMargin;
@@ -113,7 +114,7 @@
 
     //Layout textfields - email
     top =[AutoLayout createGenericConstraintFrom:self.email toView:self.lastName withAttribute:NSLayoutAttributeTop];
-    top.constant = myMargin + 20;
+    top.constant = myMargin + kstatusBarHeight;
 
     leading = [AutoLayout createLeadingConstraintFrom:self.email toView:self.view];
     leading.constant = myMargin;

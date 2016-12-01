@@ -11,10 +11,13 @@
 #import "AppDelegate.h"
 #import "Room+CoreDataClass.h"
 
+
 @interface RoomsViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property(strong, nonatomic)NSArray *rooms;
 @property(strong, nonatomic)UITableView *tableView;
+
+
 
 @end
 

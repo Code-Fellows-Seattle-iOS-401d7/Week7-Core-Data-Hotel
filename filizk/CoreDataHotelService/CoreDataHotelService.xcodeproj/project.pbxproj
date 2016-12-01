@@ -20,7 +20,18 @@
 		BD494AA31DEDF72A005E42CF /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD494AA21DEDF72A005E42CF /* DatePickerViewController.m */; };
 		BD494AA61DEE114A005E42CF /* AvailabilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD494AA51DEE114A005E42CF /* AvailabilityViewController.m */; };
 		BD494AA91DEE1D3D005E42CF /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD494AA81DEE1D3D005E42CF /* BookViewController.m */; };
+		BD494AB91DEF548E005E42CF /* AutoLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD494AB81DEF548E005E42CF /* AutoLayoutTests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD494AB31DEF5240005E42CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD494A711DEC9D7D005E42CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD494A781DEC9D7D005E42CF;
+			remoteInfo = CoreDataHotelService;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BD494A791DEC9D7D005E42CF /* CoreDataHotelService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataHotelService.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,10 +57,20 @@
 		BD494AA51DEE114A005E42CF /* AvailabilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvailabilityViewController.m; sourceTree = "<group>"; };
 		BD494AA71DEE1D3D005E42CF /* BookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookViewController.h; sourceTree = "<group>"; };
 		BD494AA81DEE1D3D005E42CF /* BookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookViewController.m; sourceTree = "<group>"; };
+		BD494AAE1DEF5240005E42CF /* CoreDataHotelServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataHotelServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD494AB21DEF5240005E42CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD494AB81DEF548E005E42CF /* AutoLayoutTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BD494A761DEC9D7D005E42CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD494AAB1DEF5240005E42CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -63,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				BD494A7B1DEC9D7D005E42CF /* CoreDataHotelService */,
+				BD494AAF1DEF5240005E42CF /* CoreDataHotelServiceTests */,
 				BD494A7A1DEC9D7D005E42CF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				BD494A791DEC9D7D005E42CF /* CoreDataHotelService.app */,
+				BD494AAE1DEF5240005E42CF /* CoreDataHotelServiceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +135,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BD494AAF1DEF5240005E42CF /* CoreDataHotelServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD494AB81DEF548E005E42CF /* AutoLayoutTests.m */,
+				BD494AB21DEF5240005E42CF /* Info.plist */,
+			);
+			path = CoreDataHotelServiceTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,6 +164,24 @@
 			productReference = BD494A791DEC9D7D005E42CF /* CoreDataHotelService.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BD494AAD1DEF5240005E42CF /* CoreDataHotelServiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD494AB51DEF5240005E42CF /* Build configuration list for PBXNativeTarget "CoreDataHotelServiceTests" */;
+			buildPhases = (
+				BD494AAA1DEF5240005E42CF /* Sources */,
+				BD494AAB1DEF5240005E42CF /* Frameworks */,
+				BD494AAC1DEF5240005E42CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD494AB41DEF5240005E42CF /* PBXTargetDependency */,
+			);
+			name = CoreDataHotelServiceTests;
+			productName = CoreDataHotelServiceTests;
+			productReference = BD494AAE1DEF5240005E42CF /* CoreDataHotelServiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -145,6 +195,12 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = AWF997WQMM;
 						ProvisioningStyle = Automatic;
+					};
+					BD494AAD1DEF5240005E42CF = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = AWF997WQMM;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BD494A781DEC9D7D005E42CF;
 					};
 				};
 			};
@@ -162,6 +218,7 @@
 			projectRoot = "";
 			targets = (
 				BD494A781DEC9D7D005E42CF /* CoreDataHotelService */,
+				BD494AAD1DEF5240005E42CF /* CoreDataHotelServiceTests */,
 			);
 		};
 /* End PBXProject section */
@@ -174,6 +231,13 @@
 				BD494A9D1DECF8A4005E42CF /* hotels.json in Resources */,
 				BD494A8F1DEC9D7D005E42CF /* LaunchScreen.storyboard in Resources */,
 				BD494A8C1DEC9D7D005E42CF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD494AAC1DEF5240005E42CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +261,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BD494AAA1DEF5240005E42CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD494AB91DEF548E005E42CF /* AutoLayoutTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD494AB41DEF5240005E42CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD494A781DEC9D7D005E42CF /* CoreDataHotelService */;
+			targetProxy = BD494AB31DEF5240005E42CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BD494A8D1DEC9D7D005E42CF /* LaunchScreen.storyboard */ = {
@@ -323,6 +403,32 @@
 			};
 			name = Release;
 		};
+		BD494AB61DEF5240005E42CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = AWF997WQMM;
+				INFOPLIST_FILE = CoreDataHotelServiceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = filizk.CoreDataHotelServiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreDataHotelService.app/CoreDataHotelService";
+			};
+			name = Debug;
+		};
+		BD494AB71DEF5240005E42CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = AWF997WQMM;
+				INFOPLIST_FILE = CoreDataHotelServiceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = filizk.CoreDataHotelServiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreDataHotelService.app/CoreDataHotelService";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -343,6 +449,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		BD494AB51DEF5240005E42CF /* Build configuration list for PBXNativeTarget "CoreDataHotelServiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD494AB61DEF5240005E42CF /* Debug */,
+				BD494AB71DEF5240005E42CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 

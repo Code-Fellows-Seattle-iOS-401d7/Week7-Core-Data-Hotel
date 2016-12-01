@@ -26,7 +26,7 @@
     [self setupRootViewController];
     [self bootstrapApp];
     //when testing this, you'll see the window in black. This is how xcode treats programatic layout.
-
+   
     return YES;
 }
 

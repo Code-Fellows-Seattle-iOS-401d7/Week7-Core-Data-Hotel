@@ -7,8 +7,13 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "AutoLayout.h"
 
 @interface AutoLayoutTests : XCTestCase
+
+@property(strong, nonatomic)UIViewController *testController;
+@property(strong, nonatomic)UIView *testView1;
+@property(strong, nonatomic)UIView *testView2;
 
 @end
 
@@ -16,17 +21,60 @@
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+
+    self.testController = [[UIViewController alloc] init];
+    self.testView1 = [[UIView alloc]init];
+
+    self.testView2 = [[UIView alloc]init];
+
+    [self.testController.view addSubview:self.testView1];
+    [self.testController.view addSubview:self.testView2];
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    self.testController = nil;
+    self.testView1 = nil;
+    self.testView2 = nil;
+
     [super tearDown];
+}
+
+- (void)testViewControllerNotNil{
+    XCTAssertNotNil(self.testController, @"Failure: self.testController is nil");
+}
+
+-(void)testViewsAreNotEqual {
+    XCTAssertNotEqual(self.testView1, self.testView2, @"Failure: testView1 equal to testView2");
 }
 
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+}
+
+-(void)testViewClass {
+    XCTAssert([self.testView1 isKindOfClass:[UIView class]], @"view1 is not a UIView");
+}
+
+-(void)testCreateGenericConstraintFromViewToViewWithAttrAndMult {
+    id constraint = [AutoLayout createGenericConstraintFrom:self.testView1 toView:_testView2 withAttribute:NSLayoutAttributeTop andMultiplier:1.0];
+
+    XCTAssert([constraint isMemberOfClass:[NSLayoutConstraint class]] ,@"constraint is not a NSLayoutConstraint Object");
+}
+
+-(void)testActivateFillViewConstraintsReturnsConsraintArray {
+    NSArray *constraints = [AutoLayout activateFullViewConstraintsUsingVFLFor:self.testView1];
+
+    int count = 0;
+
+    for (id constraint in constraints) {
+        if (![constraint isKindOfClass:[NSLayoutConstraint class]]) {
+            count++;
+        }
+    }
+
+    XCTAssert(count == 0, @"Array contains %i objects that are not NSLayoutConstraints", count);
+
 }
 
 - (void)testPerformanceExample {

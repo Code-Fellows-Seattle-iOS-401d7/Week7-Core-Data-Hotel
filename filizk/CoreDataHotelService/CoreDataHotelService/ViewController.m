@@ -17,6 +17,8 @@
 
 @end
 
+
+
 @implementation ViewController
 
 -(void)loadView{
@@ -25,6 +27,8 @@
     [self.view setBackgroundColor:[UIColor whiteColor]];
     [self.navigationItem setTitle:@"Hotel Manager"];
     [self setupCustomLayout];
+
+    
 }
 
 -(void)setupCustomLayout{
