@@ -37,7 +37,7 @@
     
 }
 
-+(NSArray *)activateFullViewConstraintsUsingVFLFor:(UIView *)view{
++(NSArray *)activateFullViewContstraintsUsingVFLFor:(UIView *)view{
     
     NSArray *constraints = [[NSArray alloc]init];
     
@@ -75,6 +75,19 @@
     
     return constraints.copy;
     
+}
+
++(NSLayoutConstraint *)createTopToBottomRelationFrom:(UIView *)view toView:(UIView *)superView{
+    NSLayoutConstraint *constraint = [NSLayoutConstraint
+                                         constraintWithItem:view
+                                         attribute:NSLayoutAttributeTop
+                                         relatedBy:NSLayoutRelationEqual
+                                         toItem:superView
+                                         attribute:NSLayoutAttributeBottom
+                                         multiplier:1.0
+                                         constant:0.0];
+    constraint.active = YES;
+    return constraint;
 }
 
 +(NSLayoutConstraint *)createLeadingConstraintFrom:(UIView *)view toView:(UIView *)superView{

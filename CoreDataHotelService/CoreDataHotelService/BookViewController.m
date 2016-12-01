@@ -104,12 +104,13 @@
     
     CGFloat myMargin = 20.0;
     
-    NSLayoutConstraint *leading = [AutoLayout createLeadingConstraintFrom:self.numberField toView:self.nameField];
+    NSLayoutConstraint *leading = [AutoLayout createLeadingConstraintFrom:self.numberField toView:self.view];
     leading.constant = myMargin;
     
-    NSLayoutConstraint *trailing = [AutoLayout createTrailingConstraintFrom:self.numberField toView:self.emailField];
+    NSLayoutConstraint *trailing = [AutoLayout createTrailingConstraintFrom:self.numberField toView:self.view];
     trailing.constant = -myMargin;
     
+    [AutoLayout createTopToBottomRelationFrom:self.numberField toView:self.nameField];
     
 }
 
@@ -123,12 +124,13 @@
     
     CGFloat myMargin = 20.0;
     
-    NSLayoutConstraint *leading = [AutoLayout createTrailingConstraintFrom:self.emailField toView:self.numberField];
+    NSLayoutConstraint *leading = [AutoLayout createLeadingConstraintFrom:self.emailField toView:self.view];
     leading.constant = myMargin;
     
     NSLayoutConstraint *trailing = [AutoLayout createTrailingConstraintFrom:self.emailField toView:self.view];
     trailing.constant = -myMargin;
     
+    [AutoLayout createTopToBottomRelationFrom:self.emailField toView:self.numberField];
 }
 
 

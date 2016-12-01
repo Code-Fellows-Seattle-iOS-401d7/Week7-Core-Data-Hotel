@@ -36,7 +36,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setUpDatePicker];
     [self setTitle:@"Pick Leave Date:"];
 }
 
@@ -59,18 +58,22 @@
     
     //Rearranged constraints
     
-    [AutoLayout createTrailingConstraintFrom:self.startPicker toView:self.endPicker];
+    [AutoLayout createTrailingConstraintFrom:self.startPicker toView:self.view];
     [AutoLayout createLeadingConstraintFrom:self.startPicker toView:self.view];
     
     [AutoLayout createTrailingConstraintFrom:self.endPicker toView:self.view];
-    [AutoLayout createLeadingConstraintFrom:self.endPicker toView:self.startPicker];
+    [AutoLayout createLeadingConstraintFrom:self.endPicker toView:self.view];
     
     
     
-    NSLayoutConstraint *topConstraint = [AutoLayout createGenericConstraintFrom:self.endPicker toView:self.view withAttribute:NSLayoutAttributeTop];
+    NSLayoutConstraint *topConstraint = [AutoLayout createGenericConstraintFrom:self.startPicker toView:self.view withAttribute:NSLayoutAttributeTop];
     
     topConstraint.constant = [self navBarAndStatusBarHeight];
     
+    
+    NSLayoutConstraint *topToBottomConstraint = [AutoLayout createTopToBottomRelationFrom:self.endPicker toView:self.startPicker];
+    
+    topToBottomConstraint.constant = [self navBarAndStatusBarHeight];
     
 }
 

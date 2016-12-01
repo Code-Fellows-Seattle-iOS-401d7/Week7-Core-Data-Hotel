@@ -15,7 +15,7 @@
 #import "Reservation+CoreDataClass.h"
 
 #import "DatePickerViewController.h"
-
+#import "LookupViewController.h"
 
 @interface ViewController ()
 
@@ -79,6 +79,7 @@
     
     [browseButton addTarget:self action:@selector(browseButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
     [bookButton addTarget:self action:@selector(bookButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
+    [lookupButton addTarget:self action:@selector(lookUpButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 
@@ -97,6 +98,12 @@
     
 }
 
+-(void)lookUpButtonSelected:(UIButton *)sender{
+    
+    LookupViewController *lookupVC = [[LookupViewController alloc]init];
+    [self.navigationController pushViewController:lookupVC animated:YES];
+    
+}
 
 -(UIButton *)createButtonWithTitle:(NSString *)title andBackgroundColor:(UIColor *)color{
     UIButton *button = [[UIButton alloc]init];

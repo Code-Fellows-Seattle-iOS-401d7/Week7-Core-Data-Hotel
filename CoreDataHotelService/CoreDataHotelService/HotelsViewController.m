@@ -32,8 +32,8 @@
     
     [self.view addSubview:self.tableView];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
-    
-    [AutoLayout activateFullViewConstraintsUsingVFLFor:self.tableView];
+    [AutoLayout activateFullViewConstraintsFrom:self.tableView toView:self.view];
+//    [AutoLayout activateFullViewContstraintsUsingVFLFor:self.tableView];
     
 }
 

@@ -12,6 +12,7 @@
 #import "AutoLayout.h"
 #import "Room+CoreDataClass.h"
 #import "BookViewController.h"
+#import "Hotel+CoreDataClass.h"
 
 
 
@@ -19,7 +20,7 @@
 
 
 @property(strong, nonatomic) UITableView *tableView;
-@property(strong, nonatomic) NSArray *availableRooms;
+@property(strong, nonatomic) NSFetchedResultsController *availableRooms;
 
 @end
 
@@ -28,7 +29,7 @@
 @implementation AvailabilityViewController
 
 
--(NSArray *)availableRooms{
+-(NSFetchedResultsController *)availableRooms{
     if(!_availableRooms){
         AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication]delegate];
         NSManagedObjectContext *context = appDelegate.persistentContainer.viewContext;
@@ -52,9 +53,18 @@
         
         NSFetchRequest *roomRequest = [NSFetchRequest fetchRequestWithEntityName:@"Room"];
         roomRequest.predicate = [NSPredicate predicateWithFormat:@"NOT self IN %@", unavailableRooms];
+        roomRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"hotel.name" ascending:YES]];
+        
+        
+        
+        
         
         NSError *roomRequestError;
-        _availableRooms = [context executeFetchRequest:roomRequest error:&roomRequestError];
+        _availableRooms = [[NSFetchedResultsController alloc]initWithFetchRequest:roomRequest managedObjectContext:context sectionNameKeyPath:@"hotel.name" cacheName:nil];
+        
+        
+        [_availableRooms performFetch:&roomRequestError];
+        
         
         if(roomRequestError){
             NSLog(@"Error requesting available rooms");
@@ -99,21 +109,52 @@
     if(!cell){
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
+
     
-    Room *room = self.availableRooms[indexPath.row];
+    Room *room = [self.availableRooms objectAtIndexPath:indexPath];
+    
     
     cell.textLabel.text = [NSString stringWithFormat:@"Room: %i(%i beds, $%0.2f/night)", room.number, room.beds, room.rate.floatValue];
     
     return cell;
 }
 
+//vvv this method is something you'll use a lot in the future vvv
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.availableRooms.count;
+   
+    NSArray *sections = [self.availableRooms sections];
+    
+    id<NSFetchedResultsSectionInfo> sectionInfo = [sections objectAtIndex:section];
+    
+    return [sectionInfo numberOfObjects];
+    
+}
+
+//vvv however many sections there are, thats how many sections we need to have vvv
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    
+    return self.availableRooms.sections.count;
+    
+}
+
+//vvv this method gives a title to each section with the name of the corressponding hotel vvv
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    
+    NSArray *sections = [self.availableRooms sections];
+    
+    id<NSFetchedResultsSectionInfo> sectionInfo = [sections objectAtIndex:section];
+    
+    Room *room = [[sectionInfo objects] objectAtIndex:section];
+    
+    return room.hotel.name;
+    
 }
 
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    Room *room = self.availableRooms[indexPath.row];
+    
+    Room *room = [self.availableRooms objectAtIndexPath:indexPath];
     
     BookViewController *bookViewController = [[BookViewController alloc]init];
     bookViewController.room = room;
