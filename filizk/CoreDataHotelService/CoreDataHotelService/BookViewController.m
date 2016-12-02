@@ -6,17 +6,21 @@
 //  Copyright © 2016 Filiz Kurban. All rights reserved.
 //
 
+#import <Flurry.h>
 #import "BookViewController.h"
 #import "AppDelegate.h"
 #import "Hotel+CoreDataClass.h"
 #import "Reservation+CoreDataClass.h"
 #import "Guest+CoreDataClass.h"
 #import "AutoLayout.h"
+#import "ReservationService.h"
 
 @interface BookViewController ()
 @property(strong, nonatomic) UITextField *firstName;
 @property(strong, nonatomic) UITextField *lastName;
 @property(strong, nonatomic) UITextField *email;
+
+@property(strong, nonatomic)ReservationService *reservationService;
 
 @end
 
@@ -25,7 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
+    self.reservationService = [ReservationService shared];
 }
 
 -(void)loadView {
@@ -127,32 +131,11 @@
 }
 
 -(void)saveButtonSelected:(UIBarButtonItem *)sender {
-    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication]delegate];
-    NSManagedObjectContext *context = appDelegate.persistentContainer.viewContext;
 
-    Reservation *reservation = [NSEntityDescription insertNewObjectForEntityForName:@"Reservation" inManagedObjectContext:context];
-
-    reservation.startDate = [NSDate date];
-    reservation.endDate = self.endDate;
-    reservation.room = self.room;
-
-    //does pointer manipulation below to add and create new array and assign that to itself.
-    //kind of like this: constraints = [constraints arrayByAddingObjectsFromArray:horizantalConstraints];
-    self.room.reservations = [self.room.reservations setByAddingObject:reservation];
-
-    reservation.guest = [NSEntityDescription insertNewObjectForEntityForName:@"Guest" inManagedObjectContext:context];
-    reservation.guest.firstName = self.firstName.text;
-    reservation.guest.lastName = self.lastName.text;
-    reservation.guest.email = self.email.text;
-
-    NSError *saveError;
-    [context save:&saveError];
-
-    if(saveError){
-        NSLog(@"There was an error saving new reservation.");
+    if ([self.reservationService completeReservation:self.startDate andEndDate:self.endDate room:self.room guestFirstName:self.firstName.text guestLastName:self.lastName.text guestEmail:self.email.text]){
+            [self.navigationController popViewControllerAnimated:YES];
     } else {
-        NSLog(@"Saving successfull");
-        [self.navigationController popViewControllerAnimated:YES];
+        //if we come here we're uncessfull creating reservation. Show a message.
     }
 }
 

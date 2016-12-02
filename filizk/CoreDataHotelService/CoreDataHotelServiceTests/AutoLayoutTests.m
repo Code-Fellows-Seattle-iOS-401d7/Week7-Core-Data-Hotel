@@ -15,6 +15,7 @@
 @property(strong, nonatomic)UIView *testView1;
 @property(strong, nonatomic)UIView *testView2;
 
+
 @end
 
 @implementation AutoLayoutTests
@@ -24,7 +25,6 @@
 
     self.testController = [[UIViewController alloc] init];
     self.testView1 = [[UIView alloc]init];
-
     self.testView2 = [[UIView alloc]init];
 
     [self.testController.view addSubview:self.testView1];
@@ -39,17 +39,16 @@
     [super tearDown];
 }
 
-- (void)testViewControllerNotNil{
+- (void)testViewControllerNotNil {
     XCTAssertNotNil(self.testController, @"Failure: self.testController is nil");
+}
+
+- (void)testViewControllerIsKindViewController {
+    XCTAssert([self.testController isKindOfClass:[UIViewController class]], @"testController is not a UIViewController");
 }
 
 -(void)testViewsAreNotEqual {
     XCTAssertNotEqual(self.testView1, self.testView2, @"Failure: testView1 equal to testView2");
-}
-
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
 }
 
 -(void)testViewClass {
@@ -80,7 +79,8 @@
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
     [self measureBlock:^{
-        // Put the code you want to measure the time of here.
+         NSArray *constraints = [AutoLayout activateFullViewConstraintsUsingVFLFor:self.testView1];
+        
     }];
 }
 

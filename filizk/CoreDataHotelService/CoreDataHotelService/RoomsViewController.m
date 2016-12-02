@@ -6,18 +6,19 @@
 //  Copyright © 2016 Filiz Kurban. All rights reserved.
 //
 
+#import <Flurry.h>
 #import "RoomsViewController.h"
 #import "AutoLayout.h"
 #import "AppDelegate.h"
 #import "Room+CoreDataClass.h"
+#import "ReservationService.h"
 
 
 @interface RoomsViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property(strong, nonatomic)NSArray *rooms;
 @property(strong, nonatomic)UITableView *tableView;
-
-
+@property(strong, nonatomic)ReservationService *reservartionService;
 
 @end
 
@@ -42,26 +43,20 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self setTitle:@"Rooms"];
+
+    self.reservartionService = [ReservationService shared];
+
+    [Flurry logEvent:@"User_Browsed_Hotel_Rooms"];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 -(NSArray *)rooms{
     if (!_rooms) {
-        AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication]delegate];
-        NSManagedObjectContext *context = delegate.persistentContainer.viewContext;
-
-        NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Room"];
-        request.predicate = [NSPredicate predicateWithFormat:@"hotel == %@", self.hotel];
-
-        NSError *requestError;
-        _rooms = [context executeFetchRequest:request error:&requestError];
-
-        if (requestError) {
-            NSLog(@"Error requesting data from Core Data");
-        }
+        _rooms = [self.reservartionService getRoomsForHotelNamed:self.hotel.name];
     }
     return _rooms;
 }

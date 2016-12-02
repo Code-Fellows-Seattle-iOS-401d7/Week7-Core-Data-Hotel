@@ -13,10 +13,12 @@
 #import "Room+CoreDataProperties.h"
 #import "BookViewController.h"
 #import "Hotel+CoreDataClass.h"
+#import "ReservationService.h"
 
 @interface AvailabilityViewController () <UITableViewDelegate, UITableViewDataSource>
 @property(strong, nonatomic) UITableView *tableView;
 @property(strong, nonatomic) NSFetchedResultsController *availableRooms;
+@property(strong, nonatomic) ReservationService *reservationService;
 @end
 
 @implementation AvailabilityViewController
@@ -30,7 +32,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.reservationService = [ReservationService shared];
 }
 
 -(void)setupTableView {
@@ -85,43 +87,11 @@
 //    return _availableRooms;
 //}
 
+//this works like a computed property - didset
 -(NSFetchedResultsController *)availableRooms {
     if (!_availableRooms) {
-        AppDelegate *appDelegate =(AppDelegate *) [[UIApplication sharedApplication]delegate];
-        NSManagedObjectContext *context = appDelegate.persistentContainer.viewContext;
-
-        NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Reservation"];
-        request.predicate = [NSPredicate predicateWithFormat:@"startDate <= %@ && endDate > %@", self.startDate, self.endDate];
-
-        NSError *requestError;
-        NSArray *results = [context executeFetchRequest:request error:&requestError];
-
-        if(requestError){
-            NSLog(@"There was an issue with our Reservation Fetch.");
-            //return nil;
-        }
-
-        NSMutableArray *unavailableRooms = [[NSMutableArray alloc]init];
-
-        for (Reservation *reservation in results){
-            [unavailableRooms addObject:reservation.room];
-        }
-
-        NSFetchRequest *roomRequest = [NSFetchRequest fetchRequestWithEntityName:@"Room"];
-        roomRequest.predicate = [NSPredicate predicateWithFormat:@"NOT self IN %@", unavailableRooms];
-        roomRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"hotel.name" ascending:YES]];
-
-
-        NSError *roomRequestError;
-        //_availableRooms = [context executeFetchRequest:roomRequest error:&roomRequestError];
-        _availableRooms = [[NSFetchedResultsController alloc]initWithFetchRequest:roomRequest managedObjectContext:context sectionNameKeyPath:@"hotel.name" cacheName:nil];
-        [_availableRooms performFetch:&roomRequestError];
-
-        if (roomRequestError) {
-            NSLog(@"There was an error requesting available rooms.");
-        }
+        _availableRooms = [self.reservationService getAvailableRoomsForDates:self.startDate andEndDate:self.endDate];
     }
-
     return _availableRooms;
 }
 
