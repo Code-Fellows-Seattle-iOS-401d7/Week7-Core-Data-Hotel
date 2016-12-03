@@ -11,6 +11,9 @@
 #import "ViewController.h"
 #import "Hotel+CoreDataClass.h"
 #import "Room+CoreDataClass.h"
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
+
 
 @interface AppDelegate ()
 
@@ -24,14 +27,19 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
-    [Flurry startSession:@"ZNCMNXTQ9NDQNJHRSDXJ"];
+//    [Flurry startSession:@"ZNCMNXTQ9NDQNJHRSDXJ"];
+//
+//    [Flurry logEvent:@"App_Opened"];
 
-    [Flurry logEvent:@"App_Opened"];
+   
 
     [self setupRootViewController];
     [self bootstrapApp];
     //when testing this, you'll see the window in black. This is how xcode treats programatic layout.
-   
+
+    [[Fabric sharedSDK] setDebug: YES];
+    [Fabric with:@[CrashlyticsKit]];
+
     return YES;
 }
 

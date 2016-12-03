@@ -6,7 +6,7 @@
 //  Copyright © 2016 Filiz Kurban. All rights reserved.
 //
 
-#import <Flurry.h>
+
 #import "LookupViewController.h"
 #import "AutoLayout.h"
 #import "AppDelegate.h"
@@ -98,7 +98,7 @@
     // Do any additional setup after loading the view.
     self.reservationService = [ReservationService shared];
     self.reservationsList = [self.reservationService retrieveAllReservations];
-    [Flurry logEvent:@"Timed_User_Search" timed:YES];
+
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -126,8 +126,7 @@
 -(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
     self.reservationsList = [self.reservationService reservationSearchWithGuestName:searchText];
     self.tableView.reloadData;
-    [Flurry logEvent:@"User searched rezervations"];
-    [Flurry endTimedEvent:@"Timed_User_Search" withParameters:nil];
+
 }
 
 

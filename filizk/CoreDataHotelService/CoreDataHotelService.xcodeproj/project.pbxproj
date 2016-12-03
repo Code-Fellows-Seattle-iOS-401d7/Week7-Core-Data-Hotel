@@ -27,6 +27,7 @@
 		BD494AC21DF0C13B005E42CF /* ReservationService.m in Sources */ = {isa = PBXBuildFile; fileRef = BD494AC11DF0C13B005E42CF /* ReservationService.m */; };
 		BD494AC41DF0CA98005E42CF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD494AC31DF0CA98005E42CF /* SystemConfiguration.framework */; };
 		BD494AC61DF0CAAD005E42CF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD494AC51DF0CAAD005E42CF /* Security.framework */; };
+		BD494ACA1DF283EC005E42CF /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD494AC91DF283EC005E42CF /* CustomTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,8 @@
 		BD494AC11DF0C13B005E42CF /* ReservationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReservationService.m; sourceTree = "<group>"; };
 		BD494AC31DF0CA98005E42CF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		BD494AC51DF0CAAD005E42CF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BD494AC81DF283EC005E42CF /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		BD494AC91DF283EC005E42CF /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 		DE0529545DE0FE0073517D37 /* Pods-CoreDataHotelService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataHotelService.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreDataHotelService/Pods-CoreDataHotelService.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,6 +174,8 @@
 		BD494ABD1DEFD829005E42CF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BD494AC01DF0C13B005E42CF /* ReservationService.h */,
+				BD494AC11DF0C13B005E42CF /* ReservationService.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -201,8 +206,8 @@
 			children = (
 				BD494A961DECA2EE005E42CF /* AutoLayout.h */,
 				BD494A971DECA2EE005E42CF /* AutoLayout.m */,
-				BD494AC01DF0C13B005E42CF /* ReservationService.h */,
-				BD494AC11DF0C13B005E42CF /* ReservationService.m */,
+				BD494AC81DF283EC005E42CF /* CustomTableViewCell.h */,
+				BD494AC91DF283EC005E42CF /* CustomTableViewCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -231,6 +236,7 @@
 				BD494A771DEC9D7D005E42CF /* Resources */,
 				5A76692767CE325F278F060A /* [CP] Embed Pods Frameworks */,
 				AB615C6EB1EF03C22403F9AE /* [CP] Copy Pods Resources */,
+				BD494AC71DF21450005E42CF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -399,6 +405,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreDataHotelService/Pods-CoreDataHotelService-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BD494AC71DF21450005E42CF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 2f684b3c217cea7a76c0689ab5b2d0a70fb07dc9 e3a57cdaa1fed0186a9798b7d5f7626c4037bd645faeb9a5dac085a65b255266";
+		};
 		E65D143BC676E9061B9D55B2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -433,6 +452,7 @@
 				BD494A8A1DEC9D7D005E42CF /* CoreDataHotelService.xcdatamodeld in Sources */,
 				BD494AC21DF0C13B005E42CF /* ReservationService.m in Sources */,
 				BD494A981DECA2EE005E42CF /* AutoLayout.m in Sources */,
+				BD494ACA1DF283EC005E42CF /* CustomTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

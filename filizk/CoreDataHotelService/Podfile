@@ -4,11 +4,14 @@
 target 'CoreDataHotelService' do
   # Uncomment this line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
-  
+
   # Pods for CoreDataHotelService
 
   pod 'Flurry-iOS-SDK/FlurrySDK' #Analytics Pod
   pod 'Flurry-iOS-SDK/FlurryAds' #Advertising Pod (requires Analytics)
+
+  pod 'Fabric'
+  pod 'Crashlytics'
 
   target 'CoreDataHotelServiceTests' do
     inherit! :search_paths

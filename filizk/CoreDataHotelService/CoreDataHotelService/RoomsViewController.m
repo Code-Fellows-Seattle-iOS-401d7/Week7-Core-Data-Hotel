@@ -12,6 +12,8 @@
 #import "AppDelegate.h"
 #import "Room+CoreDataClass.h"
 #import "ReservationService.h"
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 
 
 @interface RoomsViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -45,6 +47,8 @@
     [self setTitle:@"Rooms"];
 
     self.reservartionService = [ReservationService shared];
+
+    [Answers logSearchWithQuery:@"Customer browsed hotels" customAttributes:nil];
 
     [Flurry logEvent:@"User_Browsed_Hotel_Rooms"];
 }

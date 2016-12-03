@@ -122,6 +122,7 @@
         NSLog(@"There was an error saving new reservation.");
     } else {
         NSLog(@"Saving successfull");
+        //flurry example
         //[Flurry logEvent:@"Reservation_Booked"];
         //NSDictionary *parameters = @{@"GuestName":reservation.guest.firstName};
         //[Flurry logEvent:@"Reservation_Booked" withParameters:parameters timed:YES];

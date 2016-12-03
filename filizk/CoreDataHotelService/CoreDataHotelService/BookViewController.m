@@ -6,7 +6,7 @@
 //  Copyright © 2016 Filiz Kurban. All rights reserved.
 //
 
-#import <Flurry.h>
+
 #import "BookViewController.h"
 #import "AppDelegate.h"
 #import "Hotel+CoreDataClass.h"
@@ -14,6 +14,8 @@
 #import "Guest+CoreDataClass.h"
 #import "AutoLayout.h"
 #import "ReservationService.h"
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 
 @interface BookViewController ()
 @property(strong, nonatomic) UITextField *firstName;
@@ -30,7 +32,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.reservationService = [ReservationService shared];
+
+//    UIButton* button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+//    button.frame = CGRectMake(20, 50, 100, 30);
+//    [button setTitle:@"Crash" forState:UIControlStateNormal];
+//    [button addTarget:self action:@selector(crashButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:button];
+
 }
+
+//- (IBAction)crashButtonTapped:(id)sender {
+//    [[Crashlytics sharedInstance] crash];
+//}
+
 
 -(void)loadView {
     [super loadView];
@@ -133,7 +147,8 @@
 -(void)saveButtonSelected:(UIBarButtonItem *)sender {
 
     if ([self.reservationService completeReservation:self.startDate andEndDate:self.endDate room:self.room guestFirstName:self.firstName.text guestLastName:self.lastName.text guestEmail:self.email.text]){
-            [self.navigationController popViewControllerAnimated:YES];
+        [Answers logCustomEventWithName:@"Room booked" customAttributes:@{}];
+        [self.navigationController popViewControllerAnimated:YES];
     } else {
         //if we come here we're uncessfull creating reservation. Show a message.
     }
