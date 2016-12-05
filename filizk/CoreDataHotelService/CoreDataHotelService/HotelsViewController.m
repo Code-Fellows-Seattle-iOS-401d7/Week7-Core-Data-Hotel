@@ -11,7 +11,6 @@
 #import "AppDelegate.h"
 #import "Hotel+CoreDataClass.h"
 #import "RoomsViewController.h"
-#import "CustomTableViewCell.h"
 
 @interface HotelsViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(strong, nonatomic)NSArray *dataSource;
@@ -31,7 +30,7 @@
 
     self.tableView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:self.tableView];
-    [self.tableView registerClass:[CustomTableViewCell class] forCellReuseIdentifier:@"cell"];
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
 
     [AutoLayout activateFullViewConstraintsUsingVFLFor:self.tableView];
 
@@ -71,15 +70,14 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    CustomTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
 
 //    if (!cell) {
 //        cell = [[CustomTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
 //    }
 
     Hotel *hotel = self.dataSource[indexPath.row];
-    //cell.textLabel.text = hotel.name;
-    //cell.bodyLabel.text = hotel.name;
+    cell.textLabel.text = hotel.name;
     return cell;
 }
 
@@ -89,16 +87,7 @@
     [self.navigationController pushViewController:roomsVC animated:YES];
 }
 
-- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    /* Check Content Size and Set Height */
-//    CGRect answerFrame = [YOUR_LABEL.text boundingRectWithSize:CGSizeMake(240.f, CGFLOAT_MAX) options:(NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading) attributes:@{NSFontAttributeName:[UIFont fontWithName:@"" size:14.0f]} context:nil];
-//
-//    CGSize requiredSize = answerFrame.size;
-
-
-    return 20.0;
-}
 
 
 @end
