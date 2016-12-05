@@ -17,40 +17,41 @@
 
     if (self) {
         if (self) {
-            self.titleLabel = [[UILabel alloc]init];
-            [self.titleLabel setLineBreakMode:NSLineBreakByTruncatingTail];
-            [self.titleLabel setNumberOfLines:1];
-            [self.titleLabel setTextAlignment:NSTextAlignmentLeft];
-            [self.titleLabel setTextColor:[UIColor blackColor]];
-            [self.titleLabel setFont:[UIFont systemFontOfSize:14]];
+            self.hotelDetails = [[UILabel alloc]init];
+            [self.hotelDetails setLineBreakMode:NSLineBreakByTruncatingTail];
+            [self.hotelDetails setNumberOfLines:1];
+            [self.hotelDetails setTextAlignment:NSTextAlignmentLeft];
+            [self.hotelDetails setTextColor:[UIColor blackColor]];
+            [self.hotelDetails setFont:[UIFont systemFontOfSize:14]];
+
+         
+
+            self.stayDetails = [[UILabel alloc]init];
+            [self.stayDetails setLineBreakMode:NSLineBreakByTruncatingTail];
+            [self.stayDetails setNumberOfLines:0];
+            [self.stayDetails setTextAlignment:NSTextAlignmentLeft];
+            [self.stayDetails setTextColor:[UIColor darkGrayColor]];
+            [self.stayDetails setFont:[UIFont systemFontOfSize:14]];
+
+            self.hotelDetails.translatesAutoresizingMaskIntoConstraints = NO;
+            self.stayDetails.translatesAutoresizingMaskIntoConstraints = NO;
+
+            [self.contentView addSubview:self.hotelDetails];
+            [self.contentView addSubview:self.stayDetails];
 
 
-            self.bodyLabel = [[UILabel alloc]init];
-            [self.bodyLabel setLineBreakMode:NSLineBreakByTruncatingTail];
-            [self.bodyLabel setNumberOfLines:0];
-            [self.bodyLabel setTextAlignment:NSTextAlignmentLeft];
-            [self.bodyLabel setTextColor:[UIColor darkGrayColor]];
-            [self.bodyLabel setFont:[UIFont systemFontOfSize:14]];
-
-            self.titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
-            self.bodyLabel.translatesAutoresizingMaskIntoConstraints = NO;
-
-            [self.contentView addSubview:self.titleLabel];
-            [self.contentView addSubview:self.bodyLabel];
-
-
-             NSDictionary *views = @{@"titleLabel": self.titleLabel, @"bodyLabel": self.bodyLabel};
-            NSArray *constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-30-[titleLabel]|"
+            NSDictionary *views = @{@"hotelDetails": self.hotelDetails, @"stayDetails": self.stayDetails};
+            NSArray *constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[hotelDetails]|"
                                                                            options: 0
                                                                            metrics:nil
                                                                              views:views];
             [self.contentView addConstraints:constraints];
-            constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-30-[bodyLabel]|"
+            constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[stayDetails]|"
                                                                            options: 0
                                                                            metrics:nil
                                                                              views:views];
             [self.contentView addConstraints:constraints];
-            constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|[bodyLabel]|"
+            constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[stayDetails]|"
                                                                   options: 0
                                                                   metrics:nil
                                                                     views:views];
@@ -58,7 +59,6 @@
 
 
 
-            [self update];
         }
 
     }
@@ -66,20 +66,11 @@
     return self;
 }
 
--(void)update {
+//-(void)updateConstraints {
+//
+//    //this doesn't work ask why/
+//}
 
-    //self.bodyLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleCaption2];
-}
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
 
 @end

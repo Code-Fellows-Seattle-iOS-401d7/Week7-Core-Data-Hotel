@@ -28,6 +28,8 @@
 		BD494AC41DF0CA98005E42CF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD494AC31DF0CA98005E42CF /* SystemConfiguration.framework */; };
 		BD494AC61DF0CAAD005E42CF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD494AC51DF0CAAD005E42CF /* Security.framework */; };
 		BD494ACA1DF283EC005E42CF /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD494AC91DF283EC005E42CF /* CustomTableViewCell.m */; };
+		BD494ACD1DF39A3F005E42CF /* MappingModel1.0-1.1.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = BD494ACC1DF39A3F005E42CF /* MappingModel1.0-1.1.xcmappingmodel */; };
+		BD4AE1D81DF521FF00C410EA /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4AE1D71DF521FF00C410EA /* NSString+Common.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,10 @@
 		BD494AC51DF0CAAD005E42CF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		BD494AC81DF283EC005E42CF /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
 		BD494AC91DF283EC005E42CF /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		BD494ACB1DF39940005E42CF /* CoreDataHotelService1.1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataHotelService1.1.xcdatamodel; sourceTree = "<group>"; };
+		BD494ACC1DF39A3F005E42CF /* MappingModel1.0-1.1.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = "MappingModel1.0-1.1.xcmappingmodel"; sourceTree = "<group>"; };
+		BD4AE1D61DF521FF00C410EA /* NSString+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Common.h"; sourceTree = "<group>"; };
+		BD4AE1D71DF521FF00C410EA /* NSString+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Common.m"; sourceTree = "<group>"; };
 		DE0529545DE0FE0073517D37 /* Pods-CoreDataHotelService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataHotelService.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreDataHotelService/Pods-CoreDataHotelService.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +154,7 @@
 				BD494A8D1DEC9D7D005E42CF /* LaunchScreen.storyboard */,
 				BD494A901DEC9D7E005E42CF /* Info.plist */,
 				BD494A881DEC9D7D005E42CF /* CoreDataHotelService.xcdatamodeld */,
+				BD494ACC1DF39A3F005E42CF /* MappingModel1.0-1.1.xcmappingmodel */,
 				BD494A7C1DEC9D7D005E42CF /* Supporting Files */,
 				BD494A9C1DECF8A4005E42CF /* hotels.json */,
 			);
@@ -185,6 +192,8 @@
 			children = (
 				BD494ABA1DEFD241005E42CF /* LookupViewController.h */,
 				BD494ABB1DEFD241005E42CF /* LookupViewController.m */,
+				BD4AE1D61DF521FF00C410EA /* NSString+Common.h */,
+				BD4AE1D71DF521FF00C410EA /* NSString+Common.m */,
 				BD494AA71DEE1D3D005E42CF /* BookViewController.h */,
 				BD494AA81DEE1D3D005E42CF /* BookViewController.m */,
 				BD494AA41DEE114A005E42CF /* AvailabilityViewController.h */,
@@ -444,6 +453,7 @@
 				BD494A841DEC9D7D005E42CF /* ViewController.m in Sources */,
 				BD494A811DEC9D7D005E42CF /* AppDelegate.m in Sources */,
 				BD494ABC1DEFD241005E42CF /* LookupViewController.m in Sources */,
+				BD4AE1D81DF521FF00C410EA /* NSString+Common.m in Sources */,
 				BD494A7E1DEC9D7D005E42CF /* main.m in Sources */,
 				BD494AA61DEE114A005E42CF /* AvailabilityViewController.m in Sources */,
 				BD494AA91DEE1D3D005E42CF /* BookViewController.m in Sources */,
@@ -451,6 +461,7 @@
 				BD494AA01DED3E34005E42CF /* RoomsViewController.m in Sources */,
 				BD494A8A1DEC9D7D005E42CF /* CoreDataHotelService.xcdatamodeld in Sources */,
 				BD494AC21DF0C13B005E42CF /* ReservationService.m in Sources */,
+				BD494ACD1DF39A3F005E42CF /* MappingModel1.0-1.1.xcmappingmodel in Sources */,
 				BD494A981DECA2EE005E42CF /* AutoLayout.m in Sources */,
 				BD494ACA1DF283EC005E42CF /* CustomTableViewCell.m in Sources */,
 			);
@@ -664,9 +675,10 @@
 		BD494A881DEC9D7D005E42CF /* CoreDataHotelService.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				BD494ACB1DF39940005E42CF /* CoreDataHotelService1.1.xcdatamodel */,
 				BD494A891DEC9D7D005E42CF /* CoreDataHotelService.xcdatamodel */,
 			);
-			currentVersion = BD494A891DEC9D7D005E42CF /* CoreDataHotelService.xcdatamodel */;
+			currentVersion = BD494ACB1DF39940005E42CF /* CoreDataHotelService1.1.xcdatamodel */;
 			path = CoreDataHotelService.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

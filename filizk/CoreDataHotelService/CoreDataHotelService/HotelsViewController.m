@@ -79,7 +79,7 @@
 
     Hotel *hotel = self.dataSource[indexPath.row];
     //cell.textLabel.text = hotel.name;
-    cell.bodyLabel.text = hotel.name;
+    //cell.bodyLabel.text = hotel.name;
     return cell;
 }
 

@@ -10,8 +10,8 @@
 
 @interface CustomTableViewCell : UITableViewCell
 
-@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
-@property (strong, nonatomic) IBOutlet UILabel *bodyLabel;
+@property (strong, nonatomic) IBOutlet UILabel *hotelDetails;
+@property (strong, nonatomic) IBOutlet UILabel *stayDetails;
 
-- (void)update;
+
 @end

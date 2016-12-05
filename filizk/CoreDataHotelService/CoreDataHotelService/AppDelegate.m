@@ -6,7 +6,6 @@
 //  Copyright © 2016 Filiz Kurban. All rights reserved.
 //
 
-#import <Flurry.h>
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "Hotel+CoreDataClass.h"

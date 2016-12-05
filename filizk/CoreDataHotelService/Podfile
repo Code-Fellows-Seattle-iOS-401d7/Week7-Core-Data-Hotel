@@ -7,9 +7,6 @@ target 'CoreDataHotelService' do
 
   # Pods for CoreDataHotelService
 
-  pod 'Flurry-iOS-SDK/FlurrySDK' #Analytics Pod
-  pod 'Flurry-iOS-SDK/FlurryAds' #Advertising Pod (requires Analytics)
-
   pod 'Fabric'
   pod 'Crashlytics'
 

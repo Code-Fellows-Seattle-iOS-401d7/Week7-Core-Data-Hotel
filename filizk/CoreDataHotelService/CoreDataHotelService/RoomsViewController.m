@@ -6,7 +6,7 @@
 //  Copyright © 2016 Filiz Kurban. All rights reserved.
 //
 
-#import <Flurry.h>
+
 #import "RoomsViewController.h"
 #import "AutoLayout.h"
 #import "AppDelegate.h"
@@ -50,7 +50,7 @@
 
     [Answers logSearchWithQuery:@"Customer browsed hotels" customAttributes:nil];
 
-    [Flurry logEvent:@"User_Browsed_Hotel_Rooms"];
+    //[Flurry logEvent:@"User_Browsed_Hotel_Rooms"];
 }
 
 - (void)didReceiveMemoryWarning {

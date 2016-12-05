@@ -10,4 +10,10 @@
 
 @implementation NSString (Common)
 
+-(NSString *)formatDateToString:(NSDate *)date {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateStyle:NSDateFormatterShortStyle];
+
+    return [formatter stringFromDate:date];
+}
 @end

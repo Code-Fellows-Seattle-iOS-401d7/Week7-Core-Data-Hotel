@@ -10,36 +10,6 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>01056F9ADA06790FA8A2C2ECE0ABC972</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>FlurryAdInterstitialDelegate.h</string>
-			<key>path</key>
-			<string>FlurryAds/FlurryAdInterstitial/FlurryAdInterstitialDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0258650D8E25A50EED0AF909DCD4D81F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>FlurryAds.h</string>
-			<key>path</key>
-			<string>FlurryAds/StaticAPI/FlurryAds.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>06FDF75EC41CEC7174E1504D35ED69B2</key>
 		<dict>
 			<key>children</key>
@@ -54,115 +24,18 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>09D74AFD3271599C1F6C1BCA5E416A55</key>
+		<key>0C073BB2FC315075B9DE90C24FE2C52B</key>
 		<dict>
-			<key>baseConfigurationReference</key>
-			<string>6F5364251E957F52033EE6FB50F264BC</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Flurry-iOS-SDK/Flurry-iOS-SDK-prefix.pch</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>5.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>0C1F87FE0BE0E14C3B28B4797124EF17</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>wrapper.framework</string>
 			<key>name</key>
-			<string>FlurryAdNativeStyle.h</string>
+			<string>Crashlytics.framework</string>
 			<key>path</key>
-			<string>FlurryAds/FlurryAdNative/FlurryAdNativeStyle.h</string>
+			<string>iOS/Crashlytics.framework</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0DE1A2E27AE42202B45B219A2FDCDE49</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3A35D43A770E27569B8343F1B6AFC32A</string>
-				<string>B6C567093911300A5340DBC4EDAF167F</string>
-				<string>67A11E5C89D98927A91EE2B63B5F68FF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0E570663C7854BB26787FD3B5451E3AC</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>6F5364251E957F52033EE6FB50F264BC</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Flurry-iOS-SDK/Flurry-iOS-SDK-prefix.pch</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>5.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
 		</dict>
 		<key>0EEBD3AFB02DD80329F41DC65B82AC08</key>
 		<dict>
@@ -177,19 +50,20 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>12157E26FA58E95DCCD1267461CF7045</key>
+		<key>0FBADD4C4C312933525779355B4A728B</key>
 		<dict>
-			<key>fileRef</key>
-			<string>A232BE5546D2A04C5C9EBFAE133684EB</string>
+			<key>children</key>
+			<array>
+				<string>5AF2ED3E1B1DF375ACFB148B356F91A5</string>
+			</array>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Crashlytics</string>
+			<key>path</key>
+			<string>Crashlytics</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>125035C8E2B9C0068F746D904699DFED</key>
 		<dict>
@@ -217,26 +91,11 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>1734A373EDE94B8CBB9672BBC38F7DA3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>FlurryAdInterstitial.h</string>
-			<key>path</key>
-			<string>FlurryAds/FlurryAdInterstitial/FlurryAdInterstitial.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1922C3B39817346556021AB9F899FFBD</key>
+		<key>23F124B36981587A4F2E341B8AEC8517</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>A96910A76204E2BE7B0A2E87381E25C4</string>
+				<string>E1B6F2CE97837747A137B7F9EC710EF8</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -245,114 +104,45 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>1B5885ECFBDE5263A8C9CBD6A700CBA0</key>
+		<key>2808F8B5F6C6D4DAEADB24FE4AA2AC21</key>
 		<dict>
-			<key>fileRef</key>
-			<string>D8CC96E7D2DCEE95E2A647622B56BDBE</string>
+			<key>baseConfigurationReference</key>
+			<string>829B2C55AC3766C45F630F7A0A45B32F</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>10.0</string>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1D3AA77D1B64F1C5B7EF881224B67297</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>8299595E0D6444C99A4C5A7D87E50ACF</string>
-				<string>6B721843B942C040BF9F7DBA973F5FB0</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>1D46058E4D6F8DCD4E63FA5C6722A8B8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>XCBuildConfiguration</string>
 			<key>name</key>
-			<string>FlurryAdNativeDelegate.h</string>
-			<key>path</key>
-			<string>FlurryAds/FlurryAdNative/FlurryAdNativeDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>22E37337279BFDB93940E405C2941B68</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D5631639522F78729CA25BF9F604E09F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>26083A1BA966256FD0C26F91F9DBB3D8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>archive.ar</string>
-			<key>name</key>
-			<string>libFlurryAds_7.3.0.a</string>
-			<key>path</key>
-			<string>FlurryAds/libFlurryAds_7.3.0.a</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2806B42827C675C75FF09943A860BB03</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>FlurryAdDelegate.h</string>
-			<key>path</key>
-			<string>FlurryAds/StaticAPI/FlurryAdDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2BB543D6309FD89B982FD12B3F36C4DA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>FlurryAdBanner.h</string>
-			<key>path</key>
-			<string>FlurryAds/FlurryAdBanner/FlurryAdBanner.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2BE50B00803E06654EFD62D406C1E43C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>Empty.m</string>
-			<key>path</key>
-			<string>Flurry/Empty.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>Debug</string>
 		</dict>
 		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
 		<dict>
@@ -368,13 +158,6 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>307CF8B4C0F54226C10C1CBBA574BFDF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FF727D86F965F11E4CDCACFF3C01DCAF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
 		<key>33982E2F754B4FD3F45650DB5070990E</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -388,19 +171,12 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>345DEC3D9F65A552A8C0023049F71F8F</key>
+		<key>365352D554786AC8C2AB1548B89B437E</key>
 		<dict>
 			<key>fileRef</key>
-			<string>75FC7DC763DF99CB51D6533C5783EADD</string>
+			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
 		</dict>
 		<key>37CA7A709C718F49F48FBB3E6E31EC70</key>
 		<dict>
@@ -423,34 +199,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>38639E9390CA4246B8E6876688AEE44F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Flurry-iOS-SDK-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A35D43A770E27569B8343F1B6AFC32A</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libFlurry-iOS-SDK.a</string>
-			<key>path</key>
-			<string>libFlurry-iOS-SDK.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>3A90B83796C9A140282AE0C04D154757</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -464,30 +212,31 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>3B8A2EA18213FD7196BFC688735A5999</key>
+		<key>3DCAB2B7CDE207B3958B6CB957FCC758</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>2BB543D6309FD89B982FD12B3F36C4DA</string>
-				<string>5CC6DCF3C87F17E285B7DB6E9BA7CB9A</string>
-				<string>2806B42827C675C75FF09943A860BB03</string>
-				<string>680C455BB73E9B71BF3B73F07A5721EA</string>
-				<string>1734A373EDE94B8CBB9672BBC38F7DA3</string>
-				<string>01056F9ADA06790FA8A2C2ECE0ABC972</string>
-				<string>AD27EEE037DC0319B66C9A13C86BFC59</string>
-				<string>A232BE5546D2A04C5C9EBFAE133684EB</string>
-				<string>1D46058E4D6F8DCD4E63FA5C6722A8B8</string>
-				<string>0C1F87FE0BE0E14C3B28B4797124EF17</string>
-				<string>0258650D8E25A50EED0AF909DCD4D81F</string>
-				<string>8C2A0569D07F7B8724A2680AEADFF7F8</string>
-				<string>BD19F5ECE0688BA9AF635BBEF8895A7D</string>
+				<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>FlurryAds</string>
+			<string>iOS</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3E4B060EC323CFFD712991A80F183E55</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>365352D554786AC8C2AB1548B89B437E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>42287DDF97330524BA3EF220F0276DA6</key>
 		<dict>
@@ -560,89 +309,58 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>42405EC3D1A43206ABD18032E8405022</key>
+		<key>476C15AAEB4C2A8D0868C38F28A25B04</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>DC0B1772A88092E3E419DB37AEC078D2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>4C01CE7C97A1F4AA2AA6283DCBF4679A</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>1922C3B39817346556021AB9F899FFBD</string>
+				<string>0FBADD4C4C312933525779355B4A728B</string>
+				<string>BD8B321ABCC17A2AA08C4077E26ECA81</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Crashlytics</string>
-			<key>path</key>
-			<string>Crashlytics</string>
+			<string>Pods</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>4C7999FA3AFFB04A53E25729095F8E85</key>
+		<key>518114EE5845967A2A19F7A362D2E11F</key>
 		<dict>
-			<key>fileRef</key>
-			<string>2BE50B00803E06654EFD62D406C1E43C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fno-objc-arc</string>
-			</dict>
-		</dict>
-		<key>4F2CD3CECF9F748B3B743EB886EA3706</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
+			<key>explicitFileType</key>
 			<string>archive.ar</string>
-			<key>name</key>
-			<string>libFlurry_7.3.0.a</string>
-			<key>path</key>
-			<string>Flurry/libFlurry_7.3.0.a</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>545D243F5C4CEAC789A54837A6F91DF2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1734A373EDE94B8CBB9672BBC38F7DA3</string>
+			<key>includeInIndex</key>
+			<string>0</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods-CoreDataHotelServiceTests.a</string>
+			<key>path</key>
+			<string>libPods-CoreDataHotelServiceTests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>5917DD2C1C492229C67DD4E202AC2FF4</key>
+		<key>5AF2ED3E1B1DF375ACFB148B356F91A5</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>7AFAEC153F79E1098E8F463CD0E22C1D</string>
+				<string>0C073BB2FC315075B9DE90C24FE2C52B</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Fabric</string>
-			<key>path</key>
-			<string>Fabric</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5CC6DCF3C87F17E285B7DB6E9BA7CB9A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>FlurryAdBannerDelegate.h</string>
-			<key>path</key>
-			<string>FlurryAds/FlurryAdBanner/FlurryAdBannerDelegate.h</string>
+			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -686,36 +404,6 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>5F84ED822BBD6078FC69A4AD2FE159D9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>MediaPlayer.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/MediaPlayer.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>64F46874D27342A4F157CFEEFFC7906E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6F5364251E957F52033EE6FB50F264BC</string>
-				<string>38639E9390CA4246B8E6876688AEE44F</string>
-				<string>A4E22AD65791B67FFD819D0170E0C767</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/Flurry-iOS-SDK</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>6724BABED7AC02A98401CB3304831E86</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -728,150 +416,6 @@
 			<string>Pods-CoreDataHotelService-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>67843EEA5213460B478E1C283F23D210</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>4F2CD3CECF9F748B3B743EB886EA3706</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>67A11E5C89D98927A91EE2B63B5F68FF</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-CoreDataHotelServiceTests.a</string>
-			<key>path</key>
-			<string>libPods-CoreDataHotelServiceTests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>680C455BB73E9B71BF3B73F07A5721EA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>FlurryAdError.h</string>
-			<key>path</key>
-			<string>FlurryAds/Shared/FlurryAdError.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>694497FCA0E59B0C661CB2F45EA41EE4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FEF6A42EFE7C92C77C13B97F492C2234</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6A96E10110AFAF4EEB57A191EEB45994</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2BE50B00803E06654EFD62D406C1E43C</string>
-				<string>75FC7DC763DF99CB51D6533C5783EADD</string>
-				<string>67843EEA5213460B478E1C283F23D210</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>FlurrySDK</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6B721843B942C040BF9F7DBA973F5FB0</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>125035C8E2B9C0068F746D904699DFED</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.0</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>6B8A256B122F82C9712142C55D1B7570</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>345DEC3D9F65A552A8C0023049F71F8F</string>
-				<string>E60ACE685D0C96A30E8A92F454E0C2E4</string>
-				<string>944338FCB864A1D0F97E0B19ABE29D53</string>
-				<string>E98835A2F8652129A9C1166FA45449E9</string>
-				<string>C9F0BA6108DA48135175F3CFC4FE3C82</string>
-				<string>545D243F5C4CEAC789A54837A6F91DF2</string>
-				<string>E1DFA21D17F918CD33FA11AB77B0E55A</string>
-				<string>CA6C688A6321C0276C72E82B76419091</string>
-				<string>12157E26FA58E95DCCD1267461CF7045</string>
-				<string>781097250A51F6C4C53325CEFE0B9FAF</string>
-				<string>9A9AF16EACF26BCAD317348EAE3AFBEE</string>
-				<string>CF8315B8EB955BE80501DC87C5281319</string>
-				<string>C8D6B6E37D9FAA75A01CB0CB483F199D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6B8C033724139D9087F29CA4517CFC1A</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>09D74AFD3271599C1F6C1BCA5E416A55</string>
-				<string>0E570663C7854BB26787FD3B5451E3AC</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
 		</dict>
 		<key>6D2769A08AB0CA85FCBBD6A6CFDA0207</key>
 		<dict>
@@ -886,19 +430,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>6F5364251E957F52033EE6FB50F264BC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Flurry-iOS-SDK.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>72C15923A84B9FBCBEC7A2625AD9D0F4</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -909,48 +440,6 @@
 			<string>text</string>
 			<key>path</key>
 			<string>Pods-CoreDataHotelServiceTests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>75FC7DC763DF99CB51D6533C5783EADD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>Flurry.h</string>
-			<key>path</key>
-			<string>Flurry/Flurry.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>781097250A51F6C4C53325CEFE0B9FAF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1D46058E4D6F8DCD4E63FA5C6722A8B8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>785553737B06AFC3DA711DDEB7D56194</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9F8AE09490A7CA8EEC33BE68C12E6393</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -994,61 +483,58 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>7AFAEC153F79E1098E8F463CD0E22C1D</key>
+		<key>7BF518603657B5AA0D04CEBBFCA1285F</key>
 		<dict>
-			<key>children</key>
+			<key>buildConfigurations</key>
 			<array>
-				<string>BA2324FA176BD293EE39BA28F0F4AE66</string>
+				<string>2808F8B5F6C6D4DAEADB24FE4AA2AC21</string>
+				<string>EDC62CB28634305F7A6819B15F87A314</string>
 			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>7D83A117A0355DB2FADCC388B0992B67</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>7BF518603657B5AA0D04CEBBFCA1285F</string>
+			<key>buildPhases</key>
+			<array>
+				<string>476C15AAEB4C2A8D0868C38F28A25B04</string>
+				<string>3E4B060EC323CFFD712991A80F183E55</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
 			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>Pods-CoreDataHotelService</string>
+			<key>productName</key>
+			<string>Pods-CoreDataHotelService</string>
+			<key>productReference</key>
+			<string>935F44C661124BA345A6238B486C8D88</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
 		</dict>
 		<key>7DB346D0F39D3F0E887471402A8071AB</key>
 		<dict>
 			<key>children</key>
 			<array>
 				<string>93A4A3777CF96A4AAC1D13BA6DCCEA73</string>
-				<string>785553737B06AFC3DA711DDEB7D56194</string>
-				<string>7E23363DB1D967CADF038875F8759C50</string>
-				<string>0DE1A2E27AE42202B45B219A2FDCDE49</string>
+				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
+				<string>4C01CE7C97A1F4AA2AA6283DCBF4679A</string>
+				<string>A84F1A70208DA1C0B3B48D2F2A8956CD</string>
 				<string>06FDF75EC41CEC7174E1504D35ED69B2</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7E23363DB1D967CADF038875F8759C50</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>42405EC3D1A43206ABD18032E8405022</string>
-				<string>5917DD2C1C492229C67DD4E202AC2FF4</string>
-				<string>A0A31AE23CEC11C0FD7EA747ABED3DC6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7F44C7E8104DB13ECD703C14785C7C31</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>AVFoundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/AVFoundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
 		</dict>
 		<key>7F860A0F851B2EB400ED0081960AE15F</key>
 		<dict>
@@ -1076,46 +562,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8299595E0D6444C99A4C5A7D87E50ACF</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>829B2C55AC3766C45F630F7A0A45B32F</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.0</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
 		<key>829B2C55AC3766C45F630F7A0A45B32F</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1132,88 +578,24 @@
 		<key>85FA5FDA9C55769E3E05FD17C6B521A0</key>
 		<dict>
 			<key>fileRef</key>
-			<string>D8CC96E7D2DCEE95E2A647622B56BDBE</string>
+			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>8C2A0569D07F7B8724A2680AEADFF7F8</key>
+		<key>935F44C661124BA345A6238B486C8D88</key>
 		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
 			<key>includeInIndex</key>
-			<string>1</string>
+			<string>0</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>FlurryAdTargeting.h</string>
+			<string>libPods-CoreDataHotelService.a</string>
 			<key>path</key>
-			<string>FlurryAds/Shared/FlurryAdTargeting.h</string>
+			<string>libPods-CoreDataHotelService.a</string>
 			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8CDAA0450BBF60029113D3BEAE82027B</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>6B8C033724139D9087F29CA4517CFC1A</string>
-			<key>buildPhases</key>
-			<array>
-				<string>DE1C6532F2FD9BDA8381B0A661A5F7E9</string>
-				<string>A5C54A27B58305A1E7FEE38F5B62E311</string>
-				<string>6B8A256B122F82C9712142C55D1B7570</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Flurry-iOS-SDK</string>
-			<key>productName</key>
-			<string>Flurry-iOS-SDK</string>
-			<key>productReference</key>
-			<string>3A35D43A770E27569B8343F1B6AFC32A</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>8FE8DA0BF22C5BDBE402F2AE2726862A</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>1D3AA77D1B64F1C5B7EF881224B67297</string>
-			<key>buildPhases</key>
-			<array>
-				<string>22E37337279BFDB93940E405C2941B68</string>
-				<string>CA25F2216E8990DF519404B9BA4C989D</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>9B417C3854B6904D8305DFC2EBA5F4EA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-CoreDataHotelService</string>
-			<key>productName</key>
-			<string>Pods-CoreDataHotelService</string>
-			<key>productReference</key>
-			<string>B6C567093911300A5340DBC4EDAF167F</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>936F994218D3B5FC32A39E969FDB338A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>937ED74492DA31A3BD1CE7B2C238058D</key>
 		<dict>
@@ -1247,52 +629,6 @@
 			<key>xcLanguageSpecificationIdentifier</key>
 			<string>xcode.lang.ruby</string>
 		</dict>
-		<key>944338FCB864A1D0F97E0B19ABE29D53</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5CC6DCF3C87F17E285B7DB6E9BA7CB9A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>9A9375C0967DB0013EA22979BBB862DE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C1AB04F244C28ADDD4955547BD7D401C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9A9AF16EACF26BCAD317348EAE3AFBEE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0C1F87FE0BE0E14C3B28B4797124EF17</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>9B417C3854B6904D8305DFC2EBA5F4EA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Flurry-iOS-SDK</string>
-			<key>target</key>
-			<string>8CDAA0450BBF60029113D3BEAE82027B</string>
-			<key>targetProxy</key>
-			<string>B7B2510265FFF706D3043283D982733B</string>
-		</dict>
 		<key>9F58D53A5ACCC1C446C75BF51034B02A</key>
 		<dict>
 			<key>buildConfigurationList</key>
@@ -1313,141 +649,21 @@
 			<key>productName</key>
 			<string>Pods-CoreDataHotelServiceTests</string>
 			<key>productReference</key>
-			<string>67A11E5C89D98927A91EE2B63B5F68FF</string>
+			<string>518114EE5845967A2A19F7A362D2E11F</string>
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
 		</dict>
-		<key>9F8AE09490A7CA8EEC33BE68C12E6393</key>
+		<key>A84F1A70208DA1C0B3B48D2F2A8956CD</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>7F44C7E8104DB13ECD703C14785C7C31</string>
-				<string>936F994218D3B5FC32A39E969FDB338A</string>
-				<string>C1AB04F244C28ADDD4955547BD7D401C</string>
-				<string>D8CC96E7D2DCEE95E2A647622B56BDBE</string>
-				<string>5F84ED822BBD6078FC69A4AD2FE159D9</string>
-				<string>FF727D86F965F11E4CDCACFF3C01DCAF</string>
-				<string>B6CD3DE5A8EA4E394E6B99E0D365878D</string>
-				<string>FEF6A42EFE7C92C77C13B97F492C2234</string>
+				<string>935F44C661124BA345A6238B486C8D88</string>
+				<string>518114EE5845967A2A19F7A362D2E11F</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A0A31AE23CEC11C0FD7EA747ABED3DC6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3B8A2EA18213FD7196BFC688735A5999</string>
-				<string>6A96E10110AFAF4EEB57A191EEB45994</string>
-				<string>64F46874D27342A4F157CFEEFFC7906E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Flurry-iOS-SDK</string>
-			<key>path</key>
-			<string>Flurry-iOS-SDK</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A232BE5546D2A04C5C9EBFAE133684EB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>FlurryAdNativeAsset.h</string>
-			<key>path</key>
-			<string>FlurryAds/FlurryAdNative/FlurryAdNativeAsset.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A26DD90746927BD50709F853CA427D10</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5F84ED822BBD6078FC69A4AD2FE159D9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A4E22AD65791B67FFD819D0170E0C767</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Flurry-iOS-SDK-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A54FFB1F06B0E87D4F934F875B228BB0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D8CC96E7D2DCEE95E2A647622B56BDBE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A5C54A27B58305A1E7FEE38F5B62E311</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>AC545E87F345F84D2AEC5A40C6954954</string>
-				<string>DE582AA23DF42CE294B3BB89BE71874D</string>
-				<string>9A9375C0967DB0013EA22979BBB862DE</string>
-				<string>A54FFB1F06B0E87D4F934F875B228BB0</string>
-				<string>A26DD90746927BD50709F853CA427D10</string>
-				<string>307CF8B4C0F54226C10C1CBBA574BFDF</string>
-				<string>CAE2BD4DC43E68559F2962D6546C9A0C</string>
-				<string>694497FCA0E59B0C661CB2F45EA41EE4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A96910A76204E2BE7B0A2E87381E25C4</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Crashlytics.framework</string>
-			<key>path</key>
-			<string>iOS/Crashlytics.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AC545E87F345F84D2AEC5A40C6954954</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7F44C7E8104DB13ECD703C14785C7C31</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AD27EEE037DC0319B66C9A13C86BFC59</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>FlurryAdNative.h</string>
-			<key>path</key>
-			<string>FlurryAds/FlurryAdNative/FlurryAdNative.h</string>
+			<string>Products</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1556,65 +772,11 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>B6C567093911300A5340DBC4EDAF167F</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-CoreDataHotelService.a</string>
-			<key>path</key>
-			<string>libPods-CoreDataHotelService.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>B6CD3DE5A8EA4E394E6B99E0D365878D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>SystemConfiguration.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/SystemConfiguration.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>B7B2510265FFF706D3043283D982733B</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>8CDAA0450BBF60029113D3BEAE82027B</string>
-			<key>remoteInfo</key>
-			<string>Flurry-iOS-SDK</string>
-		</dict>
-		<key>BA2324FA176BD293EE39BA28F0F4AE66</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Fabric.framework</string>
-			<key>path</key>
-			<string>iOS/Fabric.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BD19F5ECE0688BA9AF635BBEF8895A7D</key>
+		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>26083A1BA966256FD0C26F91F9DBB3D8</string>
+				<string>3DCAB2B7CDE207B3958B6CB957FCC758</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -1623,18 +785,20 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C1AB04F244C28ADDD4955547BD7D401C</key>
+		<key>BD8B321ABCC17A2AA08C4077E26ECA81</key>
 		<dict>
+			<key>children</key>
+			<array>
+				<string>23F124B36981587A4F2E341B8AEC8517</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>CoreMedia.framework</string>
+			<string>Fabric</string>
 			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreMedia.framework</string>
+			<string>Fabric</string>
 			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>C31C08063DF693F26AD2CA7472A6CD10</key>
 		<dict>
@@ -1670,88 +834,18 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C8D6B6E37D9FAA75A01CB0CB483F199D</key>
+		<key>CEC22C73C1608DFA5D5D78BDCB218219</key>
 		<dict>
-			<key>fileRef</key>
-			<string>8C2A0569D07F7B8724A2680AEADFF7F8</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>C9F0BA6108DA48135175F3CFC4FE3C82</key>
-		<dict>
-			<key>fileRef</key>
-			<string>680C455BB73E9B71BF3B73F07A5721EA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>CA25F2216E8990DF519404B9BA4C989D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>1B5885ECFBDE5263A8C9CBD6A700CBA0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CA6C688A6321C0276C72E82B76419091</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AD27EEE037DC0319B66C9A13C86BFC59</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>CAE2BD4DC43E68559F2962D6546C9A0C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B6CD3DE5A8EA4E394E6B99E0D365878D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CAFF8C5DF7E521A5519D1DE89AC51BBD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>38639E9390CA4246B8E6876688AEE44F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CF8315B8EB955BE80501DC87C5281319</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0258650D8E25A50EED0AF909DCD4D81F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
 		</dict>
 		<key>D41D8CD98F00B204E9800998ECF8427E</key>
 		<dict>
@@ -1779,7 +873,7 @@
 			<key>mainGroup</key>
 			<string>7DB346D0F39D3F0E887471402A8071AB</string>
 			<key>productRefGroup</key>
-			<string>0DE1A2E27AE42202B45B219A2FDCDE49</string>
+			<string>A84F1A70208DA1C0B3B48D2F2A8956CD</string>
 			<key>projectDirPath</key>
 			<string></string>
 			<key>projectReferences</key>
@@ -1788,93 +882,29 @@
 			<string></string>
 			<key>targets</key>
 			<array>
-				<string>8CDAA0450BBF60029113D3BEAE82027B</string>
-				<string>8FE8DA0BF22C5BDBE402F2AE2726862A</string>
+				<string>7D83A117A0355DB2FADCC388B0992B67</string>
 				<string>9F58D53A5ACCC1C446C75BF51034B02A</string>
 			</array>
 		</dict>
-		<key>D5631639522F78729CA25BF9F604E09F</key>
+		<key>DC0B1772A88092E3E419DB37AEC078D2</key>
 		<dict>
 			<key>fileRef</key>
 			<string>6724BABED7AC02A98401CB3304831E86</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>D8CC96E7D2DCEE95E2A647622B56BDBE</key>
+		<key>E1B6F2CE97837747A137B7F9EC710EF8</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>wrapper.framework</string>
 			<key>name</key>
-			<string>Foundation.framework</string>
+			<string>Fabric.framework</string>
 			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<string>iOS/Fabric.framework</string>
 			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>DE1C6532F2FD9BDA8381B0A661A5F7E9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>4C7999FA3AFFB04A53E25729095F8E85</string>
-				<string>CAFF8C5DF7E521A5519D1DE89AC51BBD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>DE582AA23DF42CE294B3BB89BE71874D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>936F994218D3B5FC32A39E969FDB338A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1DFA21D17F918CD33FA11AB77B0E55A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>01056F9ADA06790FA8A2C2ECE0ABC972</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>E60ACE685D0C96A30E8A92F454E0C2E4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2BB543D6309FD89B982FD12B3F36C4DA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>E98835A2F8652129A9C1166FA45449E9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2806B42827C675C75FF09943A860BB03</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>ECAE60A889E0018F7F58D23981EA4551</key>
 		<dict>
@@ -1888,6 +918,46 @@
 			<string>Pods-CoreDataHotelServiceTests-acknowledgements.plist</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EDC62CB28634305F7A6819B15F87A314</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>125035C8E2B9C0068F746D904699DFED</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>10.0</string>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
 		</dict>
 		<key>EFB73AFB5EB94731F5901DEA4113C844</key>
 		<dict>
@@ -1908,32 +978,6 @@
 			<string>16C8BB2B1C4B746D9D87C18806A94867</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>FEF6A42EFE7C92C77C13B97F492C2234</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>FF727D86F965F11E4CDCACFF3C01DCAF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Security.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Security.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
 		</dict>
 	</dict>
 	<key>rootObject</key>

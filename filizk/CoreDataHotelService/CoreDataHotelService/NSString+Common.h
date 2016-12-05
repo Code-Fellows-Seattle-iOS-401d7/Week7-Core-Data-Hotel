@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface NSString (Common)
-
+-(NSString *)formatDateToString:(NSDate *)date;
 @end
