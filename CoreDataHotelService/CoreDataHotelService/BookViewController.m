@@ -6,6 +6,8 @@
 //  Copyright © 2016 Corey Malek. All rights reserved.
 //
 
+#import <Flurry.h>
+
 #import "BookViewController.h"
 #import "AppDelegate.h"
 #import "Hotel+CoreDataClass.h"
@@ -27,6 +29,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
     
 }
 
@@ -80,7 +84,7 @@
     [self.view addSubview:self.nameField];
     
     CGFloat myMargin = 20.0;
-    CGFloat navAndStatusBarHeight = CGRectGetHeight(self.navigationController.navigationBar.frame) + 20.0; //20 points for status bar
+    CGFloat navAndStatusBarHeight = CGRectGetHeight(self.navigationController.navigationBar.frame) + 20.0; 
     
     NSLayoutConstraint *top = [AutoLayout createGenericConstraintFrom:self.nameField toView:self.view withAttribute:NSLayoutAttributeTop];
     top.constant = navAndStatusBarHeight + myMargin;
@@ -160,6 +164,10 @@
         NSLog(@"There was an error saving new reservation");
     } else {
         NSLog(@"Saved Reservation Successfully!");
+        
+        NSDictionary *parameters = @{@"GuestName": reservation.guest.name};
+        [Flurry logEvent:@"Reservation_Booked" withParameters:parameters];
+        
         [self.navigationController popToRootViewControllerAnimated:YES];
     }
     

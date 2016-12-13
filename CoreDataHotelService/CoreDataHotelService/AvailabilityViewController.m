@@ -35,7 +35,7 @@
         NSManagedObjectContext *context = appDelegate.persistentContainer.viewContext;
         
         NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Reservation"];
-        request.predicate = [NSPredicate predicateWithFormat:@"startDate <= %@ && endDate >= %@", self.endDate,[NSDate date]];
+        request.predicate = [NSPredicate predicateWithFormat:@"startDate <= %@ && endDate >= %@", self.startDate, self.endDate,[NSDate date]];
         
         NSError *requestError;
         NSArray *results = [context executeFetchRequest:request error:&requestError];

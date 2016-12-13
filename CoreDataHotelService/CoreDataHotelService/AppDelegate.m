@@ -6,6 +6,7 @@
 //  Copyright © 2016 Corey Malek. All rights reserved.
 //
 
+#import <Flurry.h>
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "Hotel+CoreDataClass.h"
@@ -28,6 +29,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //write this as a constant and put it in .gitignore
+    [Flurry startSession:@"R6DFKFZ4XZGF8T8X24GH"];
+    [Flurry logEvent:@"App_Opened"];
+    
+    
     [self setupRootViewController];
     [self bootstrapApp];
     
