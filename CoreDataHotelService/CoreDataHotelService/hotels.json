@@ -1,0 +1,140 @@
+{
+    "Hotels": [
+    {
+                "name" : "Fancy Estates",
+                "location" : "Downtown",
+                "stars" : 4,
+                "rooms" : [
+                {
+                           "roomNumber" : 401,
+                           "beds" : 2,
+                           "rate" : 4
+                },
+                {
+                           "roomNumber" : 402,
+                           "beds" : 2,
+                           "rate" : 4
+                },
+                {
+                           "roomNumber" : 403,
+                           "beds" : 2,
+                           "rate" : 4
+                },
+                
+                {
+                           "roomNumber" : 404,
+                           "beds" : 2,
+                           "rate" : 4
+                },
+                
+                {
+                           "roomNumber" : 405,
+                           "beds" : 2,
+                           "rate" : 4
+                }
+                ]
+    },
+                {
+                "name" : "Solid Stay",
+                "location" : "Fremont",
+                "stars" : 3,
+                "rooms" : [
+                           {
+                           "roomNumber" : 301,
+                           "beds" : 2,
+                           "rate" : 3
+                           },
+                           {
+                           "roomNumber" : 302,
+                           "beds" : 2,
+                           "rate" : 3
+                           },
+                           {
+                           "roomNumber" : 303,
+                           "beds" : 2,
+                           "rate" : 3
+                           },
+                           
+                           {
+                           "roomNumber" : 304,
+                           "beds" : 2,
+                           "rate" : 3
+                           },
+                           
+                           {
+                           "roomNumber" : 305,
+                           "beds" : 2,
+                           "rate" : 3
+                           }
+                           ]
+                },
+                {
+                "name" : "Decent Inn",
+                "location" : "Pioneer Square",
+                "stars" : 3,
+                "rooms" : [
+                           {
+                           "roomNumber" : 201,
+                           "beds" : 2,
+                           "rate" : 2
+                           },
+                           {
+                           "roomNumber" : 202,
+                           "beds" : 2,
+                           "rate" : 2
+                           },
+                           {
+                           "roomNumber" : 203,
+                           "beds" : 2,
+                           "rate" : 2
+                           },
+                           
+                           {
+                           "roomNumber" : 204,
+                           "beds" : 2,
+                           "rate" : 2
+                           },
+                           
+                           {
+                           "roomNumber" : 205,
+                           "beds" : 2,
+                           "rate" : 2
+                           }
+                           ]
+                },
+                {
+                "name" : "Okay Motel",
+                "location" : "Sodo",
+                "stars" : 1,
+                "rooms" : [
+                           {
+                           "roomNumber" : 101,
+                           "beds" : 2,
+                           "rate" : 1
+                           },
+                           {
+                           "roomNumber" : 102,
+                           "beds" : 2,
+                           "rate" : 1
+                           },
+                           {
+                           "roomNumber" : 103,
+                           "beds" : 2,
+                           "rate" : 1
+                           },
+                           
+                           {
+                           "roomNumber" : 104,
+                           "beds" : 2,
+                           "rate" : 1
+                           },
+                           
+                           {
+                           "roomNumber" : 105,
+                           "beds" : 2,
+                           "rate" : 2
+                           }
+                           ]
+                }
+    ]
+}
